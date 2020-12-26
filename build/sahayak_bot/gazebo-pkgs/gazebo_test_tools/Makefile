@@ -56,6 +56,18 @@ CMAKE_BINARY_DIR = /home/chandan/catkin_ws/build
 #=============================================================================
 # Targets provided globally by CMake.
 
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
+
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
@@ -78,17 +90,6 @@ list_install_components/fast: list_install_components
 
 .PHONY : list_install_components/fast
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -99,6 +100,17 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/usr/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+
+.PHONY : test/fast
 
 # Special rule for the target install/strip
 install/strip: preinstall
@@ -112,28 +124,16 @@ install/strip/fast: preinstall/fast
 	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
 
-# Special rule for the target install/local
-install/local: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
 
-# Special rule for the target install/local
-install/local/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local/fast
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
 
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/usr/bin/ctest --force-new-ctest-process $(ARGS)
-.PHONY : test
-
-# Special rule for the target test
-test/fast: test
-
-.PHONY : test/fast
+.PHONY : rebuild_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -168,349 +168,34 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/fake_object_recognizer_cmd.dir/rule:
-	cd /home/chandan/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/fake_object_recognizer_cmd.dir/rule
-.PHONY : sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/fake_object_recognizer_cmd.dir/rule
+sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_test_tools_gencpp.dir/rule:
+	cd /home/chandan/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_test_tools_gencpp.dir/rule
+.PHONY : sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_test_tools_gencpp.dir/rule
 
 # Convenience name for target.
-fake_object_recognizer_cmd: sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/fake_object_recognizer_cmd.dir/rule
+gazebo_test_tools_gencpp: sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_test_tools_gencpp.dir/rule
 
-.PHONY : fake_object_recognizer_cmd
+.PHONY : gazebo_test_tools_gencpp
 
 # fast build rule for target.
-fake_object_recognizer_cmd/fast:
-	cd /home/chandan/catkin_ws/build && $(MAKE) -f sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/fake_object_recognizer_cmd.dir/build.make sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/fake_object_recognizer_cmd.dir/build
-.PHONY : fake_object_recognizer_cmd/fast
+gazebo_test_tools_gencpp/fast:
+	cd /home/chandan/catkin_ws/build && $(MAKE) -f sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_test_tools_gencpp.dir/build.make sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_test_tools_gencpp.dir/build
+.PHONY : gazebo_test_tools_gencpp/fast
 
 # Convenience name for target.
-sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/fake_object_recognizer_node.dir/rule:
-	cd /home/chandan/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/fake_object_recognizer_node.dir/rule
-.PHONY : sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/fake_object_recognizer_node.dir/rule
+sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_test_tools_generate_messages_cpp.dir/rule:
+	cd /home/chandan/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_test_tools_generate_messages_cpp.dir/rule
+.PHONY : sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_test_tools_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
-fake_object_recognizer_node: sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/fake_object_recognizer_node.dir/rule
+gazebo_test_tools_generate_messages_cpp: sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_test_tools_generate_messages_cpp.dir/rule
 
-.PHONY : fake_object_recognizer_node
+.PHONY : gazebo_test_tools_generate_messages_cpp
 
 # fast build rule for target.
-fake_object_recognizer_node/fast:
-	cd /home/chandan/catkin_ws/build && $(MAKE) -f sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/fake_object_recognizer_node.dir/build.make sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/fake_object_recognizer_node.dir/build
-.PHONY : fake_object_recognizer_node/fast
-
-# Convenience name for target.
-sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/cube_spawner.dir/rule:
-	cd /home/chandan/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/cube_spawner.dir/rule
-.PHONY : sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/cube_spawner.dir/rule
-
-# Convenience name for target.
-cube_spawner: sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/cube_spawner.dir/rule
-
-.PHONY : cube_spawner
-
-# fast build rule for target.
-cube_spawner/fast:
-	cd /home/chandan/catkin_ws/build && $(MAKE) -f sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/cube_spawner.dir/build.make sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/cube_spawner.dir/build
-.PHONY : cube_spawner/fast
-
-# Convenience name for target.
-sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_test_tools.dir/rule:
-	cd /home/chandan/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_test_tools.dir/rule
-.PHONY : sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_test_tools.dir/rule
-
-# Convenience name for target.
-gazebo_test_tools: sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_test_tools.dir/rule
-
-.PHONY : gazebo_test_tools
-
-# fast build rule for target.
-gazebo_test_tools/fast:
-	cd /home/chandan/catkin_ws/build && $(MAKE) -f sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_test_tools.dir/build.make sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_test_tools.dir/build
-.PHONY : gazebo_test_tools/fast
-
-# Convenience name for target.
-sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_test_tools_genpy.dir/rule:
-	cd /home/chandan/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_test_tools_genpy.dir/rule
-.PHONY : sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_test_tools_genpy.dir/rule
-
-# Convenience name for target.
-gazebo_test_tools_genpy: sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_test_tools_genpy.dir/rule
-
-.PHONY : gazebo_test_tools_genpy
-
-# fast build rule for target.
-gazebo_test_tools_genpy/fast:
-	cd /home/chandan/catkin_ws/build && $(MAKE) -f sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_test_tools_genpy.dir/build.make sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_test_tools_genpy.dir/build
-.PHONY : gazebo_test_tools_genpy/fast
-
-# Convenience name for target.
-sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_test_tools_gennodejs.dir/rule:
-	cd /home/chandan/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_test_tools_gennodejs.dir/rule
-.PHONY : sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_test_tools_gennodejs.dir/rule
-
-# Convenience name for target.
-gazebo_test_tools_gennodejs: sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_test_tools_gennodejs.dir/rule
-
-.PHONY : gazebo_test_tools_gennodejs
-
-# fast build rule for target.
-gazebo_test_tools_gennodejs/fast:
-	cd /home/chandan/catkin_ws/build && $(MAKE) -f sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_test_tools_gennodejs.dir/build.make sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_test_tools_gennodejs.dir/build
-.PHONY : gazebo_test_tools_gennodejs/fast
-
-# Convenience name for target.
-sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/tf2_msgs_generate_messages_py.dir/rule:
-	cd /home/chandan/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/tf2_msgs_generate_messages_py.dir/rule
-.PHONY : sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/tf2_msgs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-tf2_msgs_generate_messages_py: sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/tf2_msgs_generate_messages_py.dir/rule
-
-.PHONY : tf2_msgs_generate_messages_py
-
-# fast build rule for target.
-tf2_msgs_generate_messages_py/fast:
-	cd /home/chandan/catkin_ws/build && $(MAKE) -f sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/tf2_msgs_generate_messages_py.dir/build.make sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/tf2_msgs_generate_messages_py.dir/build
-.PHONY : tf2_msgs_generate_messages_py/fast
-
-# Convenience name for target.
-sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/rule:
-	cd /home/chandan/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/rule
-.PHONY : sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-tf2_msgs_generate_messages_lisp: sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/rule
-
-.PHONY : tf2_msgs_generate_messages_lisp
-
-# fast build rule for target.
-tf2_msgs_generate_messages_lisp/fast:
-	cd /home/chandan/catkin_ws/build && $(MAKE) -f sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/build.make sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/build
-.PHONY : tf2_msgs_generate_messages_lisp/fast
-
-# Convenience name for target.
-sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_test_tools_generate_messages_nodejs.dir/rule:
-	cd /home/chandan/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_test_tools_generate_messages_nodejs.dir/rule
-.PHONY : sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_test_tools_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-gazebo_test_tools_generate_messages_nodejs: sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_test_tools_generate_messages_nodejs.dir/rule
-
-.PHONY : gazebo_test_tools_generate_messages_nodejs
-
-# fast build rule for target.
-gazebo_test_tools_generate_messages_nodejs/fast:
-	cd /home/chandan/catkin_ws/build && $(MAKE) -f sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_test_tools_generate_messages_nodejs.dir/build.make sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_test_tools_generate_messages_nodejs.dir/build
-.PHONY : gazebo_test_tools_generate_messages_nodejs/fast
-
-# Convenience name for target.
-sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/chandan/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/rule
-.PHONY : sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-tf2_msgs_generate_messages_nodejs: sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/rule
-
-.PHONY : tf2_msgs_generate_messages_nodejs
-
-# fast build rule for target.
-tf2_msgs_generate_messages_nodejs/fast:
-	cd /home/chandan/catkin_ws/build && $(MAKE) -f sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/build.make sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/build
-.PHONY : tf2_msgs_generate_messages_nodejs/fast
-
-# Convenience name for target.
-sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/tf_generate_messages_nodejs.dir/rule:
-	cd /home/chandan/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/tf_generate_messages_nodejs.dir/rule
-.PHONY : sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/tf_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-tf_generate_messages_nodejs: sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/tf_generate_messages_nodejs.dir/rule
-
-.PHONY : tf_generate_messages_nodejs
-
-# fast build rule for target.
-tf_generate_messages_nodejs/fast:
-	cd /home/chandan/catkin_ws/build && $(MAKE) -f sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/tf_generate_messages_nodejs.dir/build.make sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/tf_generate_messages_nodejs.dir/build
-.PHONY : tf_generate_messages_nodejs/fast
-
-# Convenience name for target.
-sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/tf2_msgs_generate_messages_eus.dir/rule:
-	cd /home/chandan/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/tf2_msgs_generate_messages_eus.dir/rule
-.PHONY : sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/tf2_msgs_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-tf2_msgs_generate_messages_eus: sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/tf2_msgs_generate_messages_eus.dir/rule
-
-.PHONY : tf2_msgs_generate_messages_eus
-
-# fast build rule for target.
-tf2_msgs_generate_messages_eus/fast:
-	cd /home/chandan/catkin_ws/build && $(MAKE) -f sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/tf2_msgs_generate_messages_eus.dir/build.make sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/tf2_msgs_generate_messages_eus.dir/build
-.PHONY : tf2_msgs_generate_messages_eus/fast
-
-# Convenience name for target.
-sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/tf_generate_messages_lisp.dir/rule:
-	cd /home/chandan/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/tf_generate_messages_lisp.dir/rule
-.PHONY : sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/tf_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-tf_generate_messages_lisp: sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/tf_generate_messages_lisp.dir/rule
-
-.PHONY : tf_generate_messages_lisp
-
-# fast build rule for target.
-tf_generate_messages_lisp/fast:
-	cd /home/chandan/catkin_ws/build && $(MAKE) -f sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/tf_generate_messages_lisp.dir/build.make sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/tf_generate_messages_lisp.dir/build
-.PHONY : tf_generate_messages_lisp/fast
-
-# Convenience name for target.
-sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/rule:
-	cd /home/chandan/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/rule
-.PHONY : sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-tf2_msgs_generate_messages_cpp: sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/rule
-
-.PHONY : tf2_msgs_generate_messages_cpp
-
-# fast build rule for target.
-tf2_msgs_generate_messages_cpp/fast:
-	cd /home/chandan/catkin_ws/build && $(MAKE) -f sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/build.make sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/build
-.PHONY : tf2_msgs_generate_messages_cpp/fast
-
-# Convenience name for target.
-sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/tf_generate_messages_py.dir/rule:
-	cd /home/chandan/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/tf_generate_messages_py.dir/rule
-.PHONY : sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/tf_generate_messages_py.dir/rule
-
-# Convenience name for target.
-tf_generate_messages_py: sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/tf_generate_messages_py.dir/rule
-
-.PHONY : tf_generate_messages_py
-
-# fast build rule for target.
-tf_generate_messages_py/fast:
-	cd /home/chandan/catkin_ws/build && $(MAKE) -f sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/tf_generate_messages_py.dir/build.make sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/tf_generate_messages_py.dir/build
-.PHONY : tf_generate_messages_py/fast
-
-# Convenience name for target.
-sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_msgs_generate_messages_eus.dir/rule:
-	cd /home/chandan/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_msgs_generate_messages_eus.dir/rule
-.PHONY : sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_msgs_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-gazebo_msgs_generate_messages_eus: sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_msgs_generate_messages_eus.dir/rule
-
-.PHONY : gazebo_msgs_generate_messages_eus
-
-# fast build rule for target.
-gazebo_msgs_generate_messages_eus/fast:
-	cd /home/chandan/catkin_ws/build && $(MAKE) -f sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_msgs_generate_messages_eus.dir/build.make sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_msgs_generate_messages_eus.dir/build
-.PHONY : gazebo_msgs_generate_messages_eus/fast
-
-# Convenience name for target.
-sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/tf_generate_messages_eus.dir/rule:
-	cd /home/chandan/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/tf_generate_messages_eus.dir/rule
-.PHONY : sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/tf_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-tf_generate_messages_eus: sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/tf_generate_messages_eus.dir/rule
-
-.PHONY : tf_generate_messages_eus
-
-# fast build rule for target.
-tf_generate_messages_eus/fast:
-	cd /home/chandan/catkin_ws/build && $(MAKE) -f sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/tf_generate_messages_eus.dir/build.make sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/tf_generate_messages_eus.dir/build
-.PHONY : tf_generate_messages_eus/fast
-
-# Convenience name for target.
-sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/std_srvs_generate_messages_cpp.dir/rule:
-	cd /home/chandan/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/std_srvs_generate_messages_cpp.dir/rule
-.PHONY : sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/std_srvs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-std_srvs_generate_messages_cpp: sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/std_srvs_generate_messages_cpp.dir/rule
-
-.PHONY : std_srvs_generate_messages_cpp
-
-# fast build rule for target.
-std_srvs_generate_messages_cpp/fast:
-	cd /home/chandan/catkin_ws/build && $(MAKE) -f sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/std_srvs_generate_messages_cpp.dir/build.make sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/std_srvs_generate_messages_cpp.dir/build
-.PHONY : std_srvs_generate_messages_cpp/fast
-
-# Convenience name for target.
-sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/fake_object_recognizer.dir/rule:
-	cd /home/chandan/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/fake_object_recognizer.dir/rule
-.PHONY : sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/fake_object_recognizer.dir/rule
-
-# Convenience name for target.
-fake_object_recognizer: sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/fake_object_recognizer.dir/rule
-
-.PHONY : fake_object_recognizer
-
-# fast build rule for target.
-fake_object_recognizer/fast:
-	cd /home/chandan/catkin_ws/build && $(MAKE) -f sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/fake_object_recognizer.dir/build.make sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/fake_object_recognizer.dir/build
-.PHONY : fake_object_recognizer/fast
-
-# Convenience name for target.
-sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/std_srvs_generate_messages_lisp.dir/rule:
-	cd /home/chandan/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/std_srvs_generate_messages_lisp.dir/rule
-.PHONY : sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/std_srvs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-std_srvs_generate_messages_lisp: sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/std_srvs_generate_messages_lisp.dir/rule
-
-.PHONY : std_srvs_generate_messages_lisp
-
-# fast build rule for target.
-std_srvs_generate_messages_lisp/fast:
-	cd /home/chandan/catkin_ws/build && $(MAKE) -f sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/std_srvs_generate_messages_lisp.dir/build.make sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/std_srvs_generate_messages_lisp.dir/build
-.PHONY : std_srvs_generate_messages_lisp/fast
-
-# Convenience name for target.
-sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/tf_generate_messages_cpp.dir/rule:
-	cd /home/chandan/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/tf_generate_messages_cpp.dir/rule
-.PHONY : sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/tf_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-tf_generate_messages_cpp: sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/tf_generate_messages_cpp.dir/rule
-
-.PHONY : tf_generate_messages_cpp
-
-# fast build rule for target.
-tf_generate_messages_cpp/fast:
-	cd /home/chandan/catkin_ws/build && $(MAKE) -f sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/tf_generate_messages_cpp.dir/build.make sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/tf_generate_messages_cpp.dir/build
-.PHONY : tf_generate_messages_cpp/fast
-
-# Convenience name for target.
-sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/std_srvs_generate_messages_eus.dir/rule:
-	cd /home/chandan/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/std_srvs_generate_messages_eus.dir/rule
-.PHONY : sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/std_srvs_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-std_srvs_generate_messages_eus: sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/std_srvs_generate_messages_eus.dir/rule
-
-.PHONY : std_srvs_generate_messages_eus
-
-# fast build rule for target.
-std_srvs_generate_messages_eus/fast:
-	cd /home/chandan/catkin_ws/build && $(MAKE) -f sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/std_srvs_generate_messages_eus.dir/build.make sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/std_srvs_generate_messages_eus.dir/build
-.PHONY : std_srvs_generate_messages_eus/fast
-
-# Convenience name for target.
-sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_test_tools_genlisp.dir/rule:
-	cd /home/chandan/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_test_tools_genlisp.dir/rule
-.PHONY : sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_test_tools_genlisp.dir/rule
-
-# Convenience name for target.
-gazebo_test_tools_genlisp: sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_test_tools_genlisp.dir/rule
-
-.PHONY : gazebo_test_tools_genlisp
-
-# fast build rule for target.
-gazebo_test_tools_genlisp/fast:
-	cd /home/chandan/catkin_ws/build && $(MAKE) -f sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_test_tools_genlisp.dir/build.make sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_test_tools_genlisp.dir/build
-.PHONY : gazebo_test_tools_genlisp/fast
+gazebo_test_tools_generate_messages_cpp/fast:
+	cd /home/chandan/catkin_ws/build && $(MAKE) -f sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_test_tools_generate_messages_cpp.dir/build.make sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_test_tools_generate_messages_cpp.dir/build
+.PHONY : gazebo_test_tools_generate_messages_cpp/fast
 
 # Convenience name for target.
 sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/set_gazebo_physics_client.dir/rule:
@@ -528,19 +213,19 @@ set_gazebo_physics_client/fast:
 .PHONY : set_gazebo_physics_client/fast
 
 # Convenience name for target.
-sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/std_srvs_generate_messages_py.dir/rule:
-	cd /home/chandan/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/std_srvs_generate_messages_py.dir/rule
-.PHONY : sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/std_srvs_generate_messages_py.dir/rule
+sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_test_tools_generate_messages_eus.dir/rule:
+	cd /home/chandan/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_test_tools_generate_messages_eus.dir/rule
+.PHONY : sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_test_tools_generate_messages_eus.dir/rule
 
 # Convenience name for target.
-std_srvs_generate_messages_py: sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/std_srvs_generate_messages_py.dir/rule
+gazebo_test_tools_generate_messages_eus: sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_test_tools_generate_messages_eus.dir/rule
 
-.PHONY : std_srvs_generate_messages_py
+.PHONY : gazebo_test_tools_generate_messages_eus
 
 # fast build rule for target.
-std_srvs_generate_messages_py/fast:
-	cd /home/chandan/catkin_ws/build && $(MAKE) -f sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/std_srvs_generate_messages_py.dir/build.make sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/std_srvs_generate_messages_py.dir/build
-.PHONY : std_srvs_generate_messages_py/fast
+gazebo_test_tools_generate_messages_eus/fast:
+	cd /home/chandan/catkin_ws/build && $(MAKE) -f sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_test_tools_generate_messages_eus.dir/build.make sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_test_tools_generate_messages_eus.dir/build
+.PHONY : gazebo_test_tools_generate_messages_eus/fast
 
 # Convenience name for target.
 sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_test_tools_generate_messages.dir/rule:
@@ -573,51 +258,6 @@ _gazebo_test_tools_generate_messages_check_deps_RecognizeGazeboObject/fast:
 .PHONY : _gazebo_test_tools_generate_messages_check_deps_RecognizeGazeboObject/fast
 
 # Convenience name for target.
-sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/std_srvs_generate_messages_nodejs.dir/rule:
-	cd /home/chandan/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/std_srvs_generate_messages_nodejs.dir/rule
-.PHONY : sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/std_srvs_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-std_srvs_generate_messages_nodejs: sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/std_srvs_generate_messages_nodejs.dir/rule
-
-.PHONY : std_srvs_generate_messages_nodejs
-
-# fast build rule for target.
-std_srvs_generate_messages_nodejs/fast:
-	cd /home/chandan/catkin_ws/build && $(MAKE) -f sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/std_srvs_generate_messages_nodejs.dir/build.make sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/std_srvs_generate_messages_nodejs.dir/build
-.PHONY : std_srvs_generate_messages_nodejs/fast
-
-# Convenience name for target.
-sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_msgs_generate_messages_cpp.dir/rule:
-	cd /home/chandan/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_msgs_generate_messages_cpp.dir/rule
-.PHONY : sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_msgs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-gazebo_msgs_generate_messages_cpp: sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_msgs_generate_messages_cpp.dir/rule
-
-.PHONY : gazebo_msgs_generate_messages_cpp
-
-# fast build rule for target.
-gazebo_msgs_generate_messages_cpp/fast:
-	cd /home/chandan/catkin_ws/build && $(MAKE) -f sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_msgs_generate_messages_cpp.dir/build.make sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_msgs_generate_messages_cpp.dir/build
-.PHONY : gazebo_msgs_generate_messages_cpp/fast
-
-# Convenience name for target.
-sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/rule:
-	cd /home/chandan/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/rule
-.PHONY : sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-dynamic_reconfigure_generate_messages_cpp: sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/rule
-
-.PHONY : dynamic_reconfigure_generate_messages_cpp
-
-# fast build rule for target.
-dynamic_reconfigure_generate_messages_cpp/fast:
-	cd /home/chandan/catkin_ws/build && $(MAKE) -f sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/build.make sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/build
-.PHONY : dynamic_reconfigure_generate_messages_cpp/fast
-
-# Convenience name for target.
 sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_test_tools_generate_messages_lisp.dir/rule:
 	cd /home/chandan/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_test_tools_generate_messages_lisp.dir/rule
 .PHONY : sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_test_tools_generate_messages_lisp.dir/rule
@@ -633,34 +273,64 @@ gazebo_test_tools_generate_messages_lisp/fast:
 .PHONY : gazebo_test_tools_generate_messages_lisp/fast
 
 # Convenience name for target.
-sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/rule:
-	cd /home/chandan/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/rule
-.PHONY : sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/rule
+sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_test_tools_genlisp.dir/rule:
+	cd /home/chandan/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_test_tools_genlisp.dir/rule
+.PHONY : sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_test_tools_genlisp.dir/rule
 
 # Convenience name for target.
-dynamic_reconfigure_generate_messages_eus: sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/rule
+gazebo_test_tools_genlisp: sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_test_tools_genlisp.dir/rule
 
-.PHONY : dynamic_reconfigure_generate_messages_eus
+.PHONY : gazebo_test_tools_genlisp
 
 # fast build rule for target.
-dynamic_reconfigure_generate_messages_eus/fast:
-	cd /home/chandan/catkin_ws/build && $(MAKE) -f sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/build.make sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/build
-.PHONY : dynamic_reconfigure_generate_messages_eus/fast
+gazebo_test_tools_genlisp/fast:
+	cd /home/chandan/catkin_ws/build && $(MAKE) -f sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_test_tools_genlisp.dir/build.make sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_test_tools_genlisp.dir/build
+.PHONY : gazebo_test_tools_genlisp/fast
 
 # Convenience name for target.
-sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/rule:
-	cd /home/chandan/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/rule
-.PHONY : sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/rule
+sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/fake_object_recognizer.dir/rule:
+	cd /home/chandan/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/fake_object_recognizer.dir/rule
+.PHONY : sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/fake_object_recognizer.dir/rule
 
 # Convenience name for target.
-dynamic_reconfigure_generate_messages_lisp: sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/rule
+fake_object_recognizer: sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/fake_object_recognizer.dir/rule
 
-.PHONY : dynamic_reconfigure_generate_messages_lisp
+.PHONY : fake_object_recognizer
 
 # fast build rule for target.
-dynamic_reconfigure_generate_messages_lisp/fast:
-	cd /home/chandan/catkin_ws/build && $(MAKE) -f sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/build.make sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/build
-.PHONY : dynamic_reconfigure_generate_messages_lisp/fast
+fake_object_recognizer/fast:
+	cd /home/chandan/catkin_ws/build && $(MAKE) -f sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/fake_object_recognizer.dir/build.make sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/fake_object_recognizer.dir/build
+.PHONY : fake_object_recognizer/fast
+
+# Convenience name for target.
+sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_test_tools_generate_messages_nodejs.dir/rule:
+	cd /home/chandan/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_test_tools_generate_messages_nodejs.dir/rule
+.PHONY : sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_test_tools_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+gazebo_test_tools_generate_messages_nodejs: sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_test_tools_generate_messages_nodejs.dir/rule
+
+.PHONY : gazebo_test_tools_generate_messages_nodejs
+
+# fast build rule for target.
+gazebo_test_tools_generate_messages_nodejs/fast:
+	cd /home/chandan/catkin_ws/build && $(MAKE) -f sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_test_tools_generate_messages_nodejs.dir/build.make sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_test_tools_generate_messages_nodejs.dir/build
+.PHONY : gazebo_test_tools_generate_messages_nodejs/fast
+
+# Convenience name for target.
+sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_test_tools_gennodejs.dir/rule:
+	cd /home/chandan/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_test_tools_gennodejs.dir/rule
+.PHONY : sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_test_tools_gennodejs.dir/rule
+
+# Convenience name for target.
+gazebo_test_tools_gennodejs: sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_test_tools_gennodejs.dir/rule
+
+.PHONY : gazebo_test_tools_gennodejs
+
+# fast build rule for target.
+gazebo_test_tools_gennodejs/fast:
+	cd /home/chandan/catkin_ws/build && $(MAKE) -f sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_test_tools_gennodejs.dir/build.make sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_test_tools_gennodejs.dir/build
+.PHONY : gazebo_test_tools_gennodejs/fast
 
 # Convenience name for target.
 sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_test_tools_generate_messages_py.dir/rule:
@@ -678,154 +348,34 @@ gazebo_test_tools_generate_messages_py/fast:
 .PHONY : gazebo_test_tools_generate_messages_py/fast
 
 # Convenience name for target.
-sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/rule:
-	cd /home/chandan/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/rule
-.PHONY : sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/rule
+sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_test_tools.dir/rule:
+	cd /home/chandan/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_test_tools.dir/rule
+.PHONY : sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_test_tools.dir/rule
 
 # Convenience name for target.
-dynamic_reconfigure_generate_messages_nodejs: sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/rule
+gazebo_test_tools: sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_test_tools.dir/rule
 
-.PHONY : dynamic_reconfigure_generate_messages_nodejs
+.PHONY : gazebo_test_tools
 
 # fast build rule for target.
-dynamic_reconfigure_generate_messages_nodejs/fast:
-	cd /home/chandan/catkin_ws/build && $(MAKE) -f sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/build.make sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/build
-.PHONY : dynamic_reconfigure_generate_messages_nodejs/fast
+gazebo_test_tools/fast:
+	cd /home/chandan/catkin_ws/build && $(MAKE) -f sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_test_tools.dir/build.make sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_test_tools.dir/build
+.PHONY : gazebo_test_tools/fast
 
 # Convenience name for target.
-sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_test_tools_generate_messages_cpp.dir/rule:
-	cd /home/chandan/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_test_tools_generate_messages_cpp.dir/rule
-.PHONY : sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_test_tools_generate_messages_cpp.dir/rule
+sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_test_tools_genpy.dir/rule:
+	cd /home/chandan/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_test_tools_genpy.dir/rule
+.PHONY : sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_test_tools_genpy.dir/rule
 
 # Convenience name for target.
-gazebo_test_tools_generate_messages_cpp: sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_test_tools_generate_messages_cpp.dir/rule
+gazebo_test_tools_genpy: sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_test_tools_genpy.dir/rule
 
-.PHONY : gazebo_test_tools_generate_messages_cpp
+.PHONY : gazebo_test_tools_genpy
 
 # fast build rule for target.
-gazebo_test_tools_generate_messages_cpp/fast:
-	cd /home/chandan/catkin_ws/build && $(MAKE) -f sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_test_tools_generate_messages_cpp.dir/build.make sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_test_tools_generate_messages_cpp.dir/build
-.PHONY : gazebo_test_tools_generate_messages_cpp/fast
-
-# Convenience name for target.
-sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/rule:
-	cd /home/chandan/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/rule
-.PHONY : sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/rule
-
-# Convenience name for target.
-dynamic_reconfigure_generate_messages_py: sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/rule
-
-.PHONY : dynamic_reconfigure_generate_messages_py
-
-# fast build rule for target.
-dynamic_reconfigure_generate_messages_py/fast:
-	cd /home/chandan/catkin_ws/build && $(MAKE) -f sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/build.make sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/build
-.PHONY : dynamic_reconfigure_generate_messages_py/fast
-
-# Convenience name for target.
-sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/dynamic_reconfigure_gencfg.dir/rule:
-	cd /home/chandan/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/dynamic_reconfigure_gencfg.dir/rule
-.PHONY : sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/dynamic_reconfigure_gencfg.dir/rule
-
-# Convenience name for target.
-dynamic_reconfigure_gencfg: sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/dynamic_reconfigure_gencfg.dir/rule
-
-.PHONY : dynamic_reconfigure_gencfg
-
-# fast build rule for target.
-dynamic_reconfigure_gencfg/fast:
-	cd /home/chandan/catkin_ws/build && $(MAKE) -f sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/dynamic_reconfigure_gencfg.dir/build.make sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/dynamic_reconfigure_gencfg.dir/build
-.PHONY : dynamic_reconfigure_gencfg/fast
-
-# Convenience name for target.
-sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_msgs_generate_messages_lisp.dir/rule:
-	cd /home/chandan/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_msgs_generate_messages_lisp.dir/rule
-.PHONY : sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-gazebo_msgs_generate_messages_lisp: sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_msgs_generate_messages_lisp.dir/rule
-
-.PHONY : gazebo_msgs_generate_messages_lisp
-
-# fast build rule for target.
-gazebo_msgs_generate_messages_lisp/fast:
-	cd /home/chandan/catkin_ws/build && $(MAKE) -f sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_msgs_generate_messages_lisp.dir/build.make sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_msgs_generate_messages_lisp.dir/build
-.PHONY : gazebo_msgs_generate_messages_lisp/fast
-
-# Convenience name for target.
-sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/chandan/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_msgs_generate_messages_nodejs.dir/rule
-.PHONY : sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_msgs_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-gazebo_msgs_generate_messages_nodejs: sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_msgs_generate_messages_nodejs.dir/rule
-
-.PHONY : gazebo_msgs_generate_messages_nodejs
-
-# fast build rule for target.
-gazebo_msgs_generate_messages_nodejs/fast:
-	cd /home/chandan/catkin_ws/build && $(MAKE) -f sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_msgs_generate_messages_nodejs.dir/build.make sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_msgs_generate_messages_nodejs.dir/build
-.PHONY : gazebo_msgs_generate_messages_nodejs/fast
-
-# Convenience name for target.
-sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_msgs_generate_messages_py.dir/rule:
-	cd /home/chandan/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_msgs_generate_messages_py.dir/rule
-.PHONY : sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_msgs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-gazebo_msgs_generate_messages_py: sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_msgs_generate_messages_py.dir/rule
-
-.PHONY : gazebo_msgs_generate_messages_py
-
-# fast build rule for target.
-gazebo_msgs_generate_messages_py/fast:
-	cd /home/chandan/catkin_ws/build && $(MAKE) -f sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_msgs_generate_messages_py.dir/build.make sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_msgs_generate_messages_py.dir/build
-.PHONY : gazebo_msgs_generate_messages_py/fast
-
-# Convenience name for target.
-sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_test_tools_gencpp.dir/rule:
-	cd /home/chandan/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_test_tools_gencpp.dir/rule
-.PHONY : sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_test_tools_gencpp.dir/rule
-
-# Convenience name for target.
-gazebo_test_tools_gencpp: sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_test_tools_gencpp.dir/rule
-
-.PHONY : gazebo_test_tools_gencpp
-
-# fast build rule for target.
-gazebo_test_tools_gencpp/fast:
-	cd /home/chandan/catkin_ws/build && $(MAKE) -f sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_test_tools_gencpp.dir/build.make sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_test_tools_gencpp.dir/build
-.PHONY : gazebo_test_tools_gencpp/fast
-
-# Convenience name for target.
-sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_ros_gencfg.dir/rule:
-	cd /home/chandan/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_ros_gencfg.dir/rule
-.PHONY : sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_ros_gencfg.dir/rule
-
-# Convenience name for target.
-gazebo_ros_gencfg: sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_ros_gencfg.dir/rule
-
-.PHONY : gazebo_ros_gencfg
-
-# fast build rule for target.
-gazebo_ros_gencfg/fast:
-	cd /home/chandan/catkin_ws/build && $(MAKE) -f sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_ros_gencfg.dir/build.make sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_ros_gencfg.dir/build
-.PHONY : gazebo_ros_gencfg/fast
-
-# Convenience name for target.
-sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_test_tools_generate_messages_eus.dir/rule:
-	cd /home/chandan/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_test_tools_generate_messages_eus.dir/rule
-.PHONY : sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_test_tools_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-gazebo_test_tools_generate_messages_eus: sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_test_tools_generate_messages_eus.dir/rule
-
-.PHONY : gazebo_test_tools_generate_messages_eus
-
-# fast build rule for target.
-gazebo_test_tools_generate_messages_eus/fast:
-	cd /home/chandan/catkin_ws/build && $(MAKE) -f sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_test_tools_generate_messages_eus.dir/build.make sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_test_tools_generate_messages_eus.dir/build
-.PHONY : gazebo_test_tools_generate_messages_eus/fast
+gazebo_test_tools_genpy/fast:
+	cd /home/chandan/catkin_ws/build && $(MAKE) -f sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_test_tools_genpy.dir/build.make sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_test_tools_genpy.dir/build
+.PHONY : gazebo_test_tools_genpy/fast
 
 # Convenience name for target.
 sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_test_tools_geneus.dir/rule:
@@ -841,6 +391,51 @@ gazebo_test_tools_geneus: sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/g
 gazebo_test_tools_geneus/fast:
 	cd /home/chandan/catkin_ws/build && $(MAKE) -f sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_test_tools_geneus.dir/build.make sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/gazebo_test_tools_geneus.dir/build
 .PHONY : gazebo_test_tools_geneus/fast
+
+# Convenience name for target.
+sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/cube_spawner.dir/rule:
+	cd /home/chandan/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/cube_spawner.dir/rule
+.PHONY : sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/cube_spawner.dir/rule
+
+# Convenience name for target.
+cube_spawner: sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/cube_spawner.dir/rule
+
+.PHONY : cube_spawner
+
+# fast build rule for target.
+cube_spawner/fast:
+	cd /home/chandan/catkin_ws/build && $(MAKE) -f sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/cube_spawner.dir/build.make sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/cube_spawner.dir/build
+.PHONY : cube_spawner/fast
+
+# Convenience name for target.
+sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/fake_object_recognizer_cmd.dir/rule:
+	cd /home/chandan/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/fake_object_recognizer_cmd.dir/rule
+.PHONY : sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/fake_object_recognizer_cmd.dir/rule
+
+# Convenience name for target.
+fake_object_recognizer_cmd: sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/fake_object_recognizer_cmd.dir/rule
+
+.PHONY : fake_object_recognizer_cmd
+
+# fast build rule for target.
+fake_object_recognizer_cmd/fast:
+	cd /home/chandan/catkin_ws/build && $(MAKE) -f sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/fake_object_recognizer_cmd.dir/build.make sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/fake_object_recognizer_cmd.dir/build
+.PHONY : fake_object_recognizer_cmd/fast
+
+# Convenience name for target.
+sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/fake_object_recognizer_node.dir/rule:
+	cd /home/chandan/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/fake_object_recognizer_node.dir/rule
+.PHONY : sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/fake_object_recognizer_node.dir/rule
+
+# Convenience name for target.
+fake_object_recognizer_node: sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/fake_object_recognizer_node.dir/rule
+
+.PHONY : fake_object_recognizer_node
+
+# fast build rule for target.
+fake_object_recognizer_node/fast:
+	cd /home/chandan/catkin_ws/build && $(MAKE) -f sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/fake_object_recognizer_node.dir/build.make sahayak_bot/gazebo-pkgs/gazebo_test_tools/CMakeFiles/fake_object_recognizer_node.dir/build
+.PHONY : fake_object_recognizer_node/fast
 
 src/FakeObjectRecognizer.o: src/FakeObjectRecognizer.cpp.o
 
@@ -1010,58 +605,31 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... install/local"
 	@echo "... install"
 	@echo "... list_install_components"
-	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... fake_object_recognizer_cmd"
-	@echo "... fake_object_recognizer_node"
-	@echo "... cube_spawner"
-	@echo "... gazebo_test_tools"
-	@echo "... gazebo_test_tools_genpy"
-	@echo "... gazebo_test_tools_gennodejs"
-	@echo "... install/strip"
-	@echo "... tf2_msgs_generate_messages_py"
-	@echo "... tf2_msgs_generate_messages_lisp"
-	@echo "... gazebo_test_tools_generate_messages_nodejs"
-	@echo "... tf2_msgs_generate_messages_nodejs"
-	@echo "... tf_generate_messages_nodejs"
-	@echo "... tf2_msgs_generate_messages_eus"
-	@echo "... tf_generate_messages_lisp"
-	@echo "... tf2_msgs_generate_messages_cpp"
-	@echo "... tf_generate_messages_py"
-	@echo "... gazebo_msgs_generate_messages_eus"
-	@echo "... tf_generate_messages_eus"
-	@echo "... std_srvs_generate_messages_cpp"
-	@echo "... fake_object_recognizer"
-	@echo "... std_srvs_generate_messages_lisp"
-	@echo "... tf_generate_messages_cpp"
-	@echo "... install/local"
-	@echo "... std_srvs_generate_messages_eus"
-	@echo "... gazebo_test_tools_genlisp"
-	@echo "... set_gazebo_physics_client"
-	@echo "... std_srvs_generate_messages_py"
-	@echo "... gazebo_test_tools_generate_messages"
-	@echo "... _gazebo_test_tools_generate_messages_check_deps_RecognizeGazeboObject"
-	@echo "... std_srvs_generate_messages_nodejs"
-	@echo "... gazebo_msgs_generate_messages_cpp"
-	@echo "... dynamic_reconfigure_generate_messages_cpp"
-	@echo "... gazebo_test_tools_generate_messages_lisp"
-	@echo "... dynamic_reconfigure_generate_messages_eus"
-	@echo "... dynamic_reconfigure_generate_messages_lisp"
-	@echo "... gazebo_test_tools_generate_messages_py"
-	@echo "... dynamic_reconfigure_generate_messages_nodejs"
-	@echo "... gazebo_test_tools_generate_messages_cpp"
-	@echo "... dynamic_reconfigure_generate_messages_py"
-	@echo "... dynamic_reconfigure_gencfg"
-	@echo "... gazebo_msgs_generate_messages_lisp"
-	@echo "... gazebo_msgs_generate_messages_nodejs"
-	@echo "... gazebo_msgs_generate_messages_py"
 	@echo "... test"
 	@echo "... gazebo_test_tools_gencpp"
-	@echo "... gazebo_ros_gencfg"
+	@echo "... gazebo_test_tools_generate_messages_cpp"
+	@echo "... set_gazebo_physics_client"
 	@echo "... gazebo_test_tools_generate_messages_eus"
+	@echo "... gazebo_test_tools_generate_messages"
+	@echo "... _gazebo_test_tools_generate_messages_check_deps_RecognizeGazeboObject"
+	@echo "... gazebo_test_tools_generate_messages_lisp"
+	@echo "... gazebo_test_tools_genlisp"
+	@echo "... fake_object_recognizer"
+	@echo "... gazebo_test_tools_generate_messages_nodejs"
+	@echo "... gazebo_test_tools_gennodejs"
+	@echo "... install/strip"
+	@echo "... gazebo_test_tools_generate_messages_py"
+	@echo "... gazebo_test_tools"
+	@echo "... rebuild_cache"
+	@echo "... gazebo_test_tools_genpy"
 	@echo "... gazebo_test_tools_geneus"
+	@echo "... cube_spawner"
+	@echo "... fake_object_recognizer_cmd"
+	@echo "... fake_object_recognizer_node"
 	@echo "... src/FakeObjectRecognizer.o"
 	@echo "... src/FakeObjectRecognizer.i"
 	@echo "... src/FakeObjectRecognizer.s"
