@@ -1,0 +1,8 @@
+prefix=/home/chandan/catkin_ws/build/devel
+
+Name: moveit_fake_controller_manager
+Description: Description of moveit_fake_controller_manager
+Version: 1.0.7
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: moveit_core moveit_ros_planning roscpp

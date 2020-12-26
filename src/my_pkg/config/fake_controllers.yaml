@@ -1,0 +1,7 @@
+controller_list:
+  - name: fake_myGroup_controller
+    joints:
+      - gripper_finger1_joint
+initial:  # Define initial robot poses.
+  - group: myGroup
+    pose: allZeros

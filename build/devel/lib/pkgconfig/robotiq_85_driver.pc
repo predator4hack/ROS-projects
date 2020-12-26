@@ -1,0 +1,8 @@
+prefix=/home/chandan/catkin_ws/build/devel
+
+Name: robotiq_85_driver
+Description: Description of robotiq_85_driver
+Version: 0.0.1
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
