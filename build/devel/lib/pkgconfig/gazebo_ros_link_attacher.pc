@@ -1,0 +1,8 @@
+prefix=/home/chandan/catkin_ws/build/devel
+
+Name: gazebo_ros_link_attacher
+Description: Description of gazebo_ros_link_attacher
+Version: 0.0.0
+Cflags: -I/home/chandan/catkin_ws/build/devel/include
+Libs: -L${prefix}/lib 
+Requires: message_runtime
