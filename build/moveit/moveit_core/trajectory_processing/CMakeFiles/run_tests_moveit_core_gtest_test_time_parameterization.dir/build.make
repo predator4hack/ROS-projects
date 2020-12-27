@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/chandan/catkin_ws/build
 include moveit/moveit_core/trajectory_processing/CMakeFiles/run_tests_moveit_core_gtest_test_time_parameterization.dir/progress.make
 
 moveit/moveit_core/trajectory_processing/CMakeFiles/run_tests_moveit_core_gtest_test_time_parameterization:
-	cd /home/chandan/catkin_ws/build/moveit/moveit_core/trajectory_processing && ../../../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/catkin/cmake/test/run_tests.py /home/chandan/catkin_ws/build/test_results/moveit_core/gtest-test_time_parameterization.xml "/home/chandan/catkin_ws/build/devel/lib/moveit_core/test_time_parameterization --gtest_output=xml:/home/chandan/catkin_ws/build/test_results/moveit_core/gtest-test_time_parameterization.xml"
+	cd /home/chandan/catkin_ws/build/moveit/moveit_core/trajectory_processing && ../../../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/catkin/cmake/test/run_tests.py /home/chandan/catkin_ws/build/test_results/moveit_core/gtest-test_time_parameterization.xml "/home/chandan/catkin_ws/devel/lib/moveit_core/test_time_parameterization --gtest_output=xml:/home/chandan/catkin_ws/build/test_results/moveit_core/gtest-test_time_parameterization.xml"
 
 run_tests_moveit_core_gtest_test_time_parameterization: moveit/moveit_core/trajectory_processing/CMakeFiles/run_tests_moveit_core_gtest_test_time_parameterization
 run_tests_moveit_core_gtest_test_time_parameterization: moveit/moveit_core/trajectory_processing/CMakeFiles/run_tests_moveit_core_gtest_test_time_parameterization.dir/build.make

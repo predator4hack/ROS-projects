@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/test_controller_manager_plugin.dir/test/test_moveit_controller_manager_plugin.cpp.o"
-  "../../../../devel/lib/libtest_controller_manager_plugin.pdb"
-  "../../../../devel/lib/libtest_controller_manager_plugin.so.1.0.7"
-  "../../../../devel/lib/libtest_controller_manager_plugin.so"
+  "/home/chandan/catkin_ws/devel/lib/libtest_controller_manager_plugin.pdb"
+  "/home/chandan/catkin_ws/devel/lib/libtest_controller_manager_plugin.so.1.0.7"
+  "/home/chandan/catkin_ws/devel/lib/libtest_controller_manager_plugin.so"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "/home/chandan/catkin_ws/src/turtlebot3_simula
 PROJECT_CATKIN_DEPENDS = "roscpp;std_msgs;sensor_msgs;geometry_msgs;nav_msgs;tf;gazebo_ros".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "".split(';') if "" != "" else []
 PROJECT_NAME = "turtlebot3_gazebo"
-PROJECT_SPACE_DIR = "/home/chandan/catkin_ws/build/devel"
+PROJECT_SPACE_DIR = "/home/chandan/catkin_ws/devel"
 PROJECT_VERSION = "1.3.0"

@@ -5,9 +5,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/moveit_planning_scene_rviz_plugin_autogen.dir/AutogenOldSettings.cmake"
   "CMakeFiles/moveit_planning_scene_rviz_plugin_core.dir/src/planning_scene_display.cpp.o"
   "CMakeFiles/moveit_planning_scene_rviz_plugin_core.dir/moveit_planning_scene_rviz_plugin_core_autogen/mocs_compilation.cpp.o"
-  "../../../../devel/lib/libmoveit_planning_scene_rviz_plugin_core.pdb"
-  "../../../../devel/lib/libmoveit_planning_scene_rviz_plugin_core.so.1.0.7"
-  "../../../../devel/lib/libmoveit_planning_scene_rviz_plugin_core.so"
+  "/home/chandan/catkin_ws/devel/lib/libmoveit_planning_scene_rviz_plugin_core.pdb"
+  "/home/chandan/catkin_ws/devel/lib/libmoveit_planning_scene_rviz_plugin_core.so.1.0.7"
+  "/home/chandan/catkin_ws/devel/lib/libmoveit_planning_scene_rviz_plugin_core.so"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/object_msgs_tools.dir/src/ObjectTFBroadcaster.cpp.o"
   "CMakeFiles/object_msgs_tools.dir/src/ObjectFunctions.cpp.o"
-  "../../../devel/lib/libobject_msgs_tools.pdb"
-  "../../../devel/lib/libobject_msgs_tools.so"
+  "/home/chandan/catkin_ws/devel/lib/libobject_msgs_tools.pdb"
+  "/home/chandan/catkin_ws/devel/lib/libobject_msgs_tools.so"
 )
 
 # Per-language clean rules from dependency scanning.

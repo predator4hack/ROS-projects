@@ -1,4 +1,4 @@
-prefix=/usr/local
+prefix=/home/chandan/catkin_ws/install
 
 Name: moveit_commander
 Description: Description of moveit_commander

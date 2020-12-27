@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "".split(';') if "" != "" else []
 PROJECT_CATKIN_DEPENDS = "moveit_core;moveit_ros_planning;roscpp".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "".split(';') if "" != "" else []
 PROJECT_NAME = "moveit_fake_controller_manager"
-PROJECT_SPACE_DIR = "/home/chandan/catkin_ws/build/devel"
+PROJECT_SPACE_DIR = "/home/chandan/catkin_ws/devel"
 PROJECT_VERSION = "1.0.7"

@@ -2,7 +2,7 @@
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/usr/local")
+  set(CMAKE_INSTALL_PREFIX "/home/chandan/catkin_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -50,8 +50,8 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
     endif()
   endforeach()
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES
-    "/home/chandan/catkin_ws/build/devel/lib/libmoveit_profiler.so.1.0.7"
-    "/home/chandan/catkin_ws/build/devel/lib/libmoveit_profiler.so"
+    "/home/chandan/catkin_ws/devel/lib/libmoveit_profiler.so.1.0.7"
+    "/home/chandan/catkin_ws/devel/lib/libmoveit_profiler.so"
     )
   foreach(file
       "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libmoveit_profiler.so.1.0.7"

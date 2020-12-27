@@ -43,7 +43,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/home/chandan/catkin_ws/src/moveit/moveit_core/sensor_manager/include"
   "/home/chandan/catkin_ws/src/moveit/moveit_core/trajectory_processing/include"
   "/home/chandan/catkin_ws/src/moveit/moveit_core/utils/include"
-  "devel/include"
+  "/home/chandan/catkin_ws/devel/include"
   "/opt/ros/melodic/include"
   "/opt/ros/melodic/share/orocos_kdl/cmake/../../../include"
   "/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"

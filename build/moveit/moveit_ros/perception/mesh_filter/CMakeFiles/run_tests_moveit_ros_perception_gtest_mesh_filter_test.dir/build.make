@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/chandan/catkin_ws/build
 include moveit/moveit_ros/perception/mesh_filter/CMakeFiles/run_tests_moveit_ros_perception_gtest_mesh_filter_test.dir/progress.make
 
 moveit/moveit_ros/perception/mesh_filter/CMakeFiles/run_tests_moveit_ros_perception_gtest_mesh_filter_test:
-	cd /home/chandan/catkin_ws/build/moveit/moveit_ros/perception/mesh_filter && ../../../../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/catkin/cmake/test/run_tests.py /home/chandan/catkin_ws/build/test_results/moveit_ros_perception/gtest-mesh_filter_test.xml "/home/chandan/catkin_ws/build/devel/lib/moveit_ros_perception/mesh_filter_test --gtest_output=xml:/home/chandan/catkin_ws/build/test_results/moveit_ros_perception/gtest-mesh_filter_test.xml"
+	cd /home/chandan/catkin_ws/build/moveit/moveit_ros/perception/mesh_filter && ../../../../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/catkin/cmake/test/run_tests.py /home/chandan/catkin_ws/build/test_results/moveit_ros_perception/gtest-mesh_filter_test.xml "/home/chandan/catkin_ws/devel/lib/moveit_ros_perception/mesh_filter_test --gtest_output=xml:/home/chandan/catkin_ws/build/test_results/moveit_ros_perception/gtest-mesh_filter_test.xml"
 
 run_tests_moveit_ros_perception_gtest_mesh_filter_test: moveit/moveit_ros/perception/mesh_filter/CMakeFiles/run_tests_moveit_ros_perception_gtest_mesh_filter_test
 run_tests_moveit_ros_perception_gtest_mesh_filter_test: moveit/moveit_ros/perception/mesh_filter/CMakeFiles/run_tests_moveit_ros_perception_gtest_mesh_filter_test.dir/build.make

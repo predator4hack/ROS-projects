@@ -30,9 +30,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/moveit_setup_assistant_widgets.dir/src/widgets/simulation_widget.cpp.o"
   "CMakeFiles/moveit_setup_assistant_widgets.dir/src/widgets/author_information_widget.cpp.o"
   "CMakeFiles/moveit_setup_assistant_widgets.dir/moveit_setup_assistant_widgets_autogen/mocs_compilation.cpp.o"
-  "../../devel/lib/libmoveit_setup_assistant_widgets.pdb"
-  "../../devel/lib/libmoveit_setup_assistant_widgets.so.1.0.7"
-  "../../devel/lib/libmoveit_setup_assistant_widgets.so"
+  "/home/chandan/catkin_ws/devel/lib/libmoveit_setup_assistant_widgets.pdb"
+  "/home/chandan/catkin_ws/devel/lib/libmoveit_setup_assistant_widgets.so.1.0.7"
+  "/home/chandan/catkin_ws/devel/lib/libmoveit_setup_assistant_widgets.so"
 )
 
 # Per-language clean rules from dependency scanning.

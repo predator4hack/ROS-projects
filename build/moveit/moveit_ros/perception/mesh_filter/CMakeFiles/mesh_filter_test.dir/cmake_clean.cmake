@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/mesh_filter_test.dir/test/mesh_filter_test.cpp.o"
-  "../../../../devel/lib/moveit_ros_perception/mesh_filter_test.pdb"
-  "../../../../devel/lib/moveit_ros_perception/mesh_filter_test"
+  "/home/chandan/catkin_ws/devel/lib/moveit_ros_perception/mesh_filter_test.pdb"
+  "/home/chandan/catkin_ws/devel/lib/moveit_ros_perception/mesh_filter_test"
 )
 
 # Per-language clean rules from dependency scanning.

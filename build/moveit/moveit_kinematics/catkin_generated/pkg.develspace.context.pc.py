@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "/home/chandan/catkin_ws/src/moveit/moveit_kin
 PROJECT_CATKIN_DEPENDS = "moveit_core;pluginlib;roscpp".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "".split(';') if "" != "" else []
 PROJECT_NAME = "moveit_kinematics"
-PROJECT_SPACE_DIR = "/home/chandan/catkin_ws/build/devel"
+PROJECT_SPACE_DIR = "/home/chandan/catkin_ws/devel"
 PROJECT_VERSION = "1.0.7"

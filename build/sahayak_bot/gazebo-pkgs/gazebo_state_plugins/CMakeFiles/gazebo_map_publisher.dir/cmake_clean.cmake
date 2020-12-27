@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/gazebo_map_publisher.dir/src/GazeboMapPublisher.cpp.o"
-  "../../../devel/lib/libgazebo_map_publisher.pdb"
-  "../../../devel/lib/libgazebo_map_publisher.so"
+  "/home/chandan/catkin_ws/devel/lib/libgazebo_map_publisher.pdb"
+  "/home/chandan/catkin_ws/devel/lib/libgazebo_map_publisher.so"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/chandan/catkin_ws/build
 include moveit/moveit_setup_assistant/CMakeFiles/_run_tests_moveit_setup_assistant_gtest_test_reading_writing_config.dir/progress.make
 
 moveit/moveit_setup_assistant/CMakeFiles/_run_tests_moveit_setup_assistant_gtest_test_reading_writing_config:
-	cd /home/chandan/catkin_ws/build/moveit/moveit_setup_assistant && ../../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/catkin/cmake/test/run_tests.py /home/chandan/catkin_ws/build/test_results/moveit_setup_assistant/gtest-test_reading_writing_config.xml "/home/chandan/catkin_ws/build/devel/lib/moveit_setup_assistant/test_reading_writing_config --gtest_output=xml:/home/chandan/catkin_ws/build/test_results/moveit_setup_assistant/gtest-test_reading_writing_config.xml"
+	cd /home/chandan/catkin_ws/build/moveit/moveit_setup_assistant && ../../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/catkin/cmake/test/run_tests.py /home/chandan/catkin_ws/build/test_results/moveit_setup_assistant/gtest-test_reading_writing_config.xml "/home/chandan/catkin_ws/devel/lib/moveit_setup_assistant/test_reading_writing_config --gtest_output=xml:/home/chandan/catkin_ws/build/test_results/moveit_setup_assistant/gtest-test_reading_writing_config.xml"
 
 _run_tests_moveit_setup_assistant_gtest_test_reading_writing_config: moveit/moveit_setup_assistant/CMakeFiles/_run_tests_moveit_setup_assistant_gtest_test_reading_writing_config
 _run_tests_moveit_setup_assistant_gtest_test_reading_writing_config: moveit/moveit_setup_assistant/CMakeFiles/_run_tests_moveit_setup_assistant_gtest_test_reading_writing_config.dir/build.make

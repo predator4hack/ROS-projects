@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/robotiq_85_msgs_generate_messages_nodejs"
-  "../../../devel/share/gennodejs/ros/robotiq_85_msgs/msg/GripperStat.js"
-  "../../../devel/share/gennodejs/ros/robotiq_85_msgs/msg/GripperCmd.js"
+  "/home/chandan/catkin_ws/devel/share/gennodejs/ros/robotiq_85_msgs/msg/GripperStat.js"
+  "/home/chandan/catkin_ws/devel/share/gennodejs/ros/robotiq_85_msgs/msg/GripperCmd.js"
 )
 
 # Per-language clean rules from dependency scanning.

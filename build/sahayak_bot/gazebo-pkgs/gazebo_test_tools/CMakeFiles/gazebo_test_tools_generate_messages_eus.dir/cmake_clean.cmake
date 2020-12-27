@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/gazebo_test_tools_generate_messages_eus"
-  "../../../devel/share/roseus/ros/gazebo_test_tools/srv/RecognizeGazeboObject.l"
-  "../../../devel/share/roseus/ros/gazebo_test_tools/manifest.l"
+  "/home/chandan/catkin_ws/devel/share/roseus/ros/gazebo_test_tools/srv/RecognizeGazeboObject.l"
+  "/home/chandan/catkin_ws/devel/share/roseus/ros/gazebo_test_tools/manifest.l"
 )
 
 # Per-language clean rules from dependency scanning.

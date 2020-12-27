@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/moveit_profiler.dir/src/profiler.cpp.o"
-  "../../../devel/lib/libmoveit_profiler.pdb"
-  "../../../devel/lib/libmoveit_profiler.so.1.0.7"
-  "../../../devel/lib/libmoveit_profiler.so"
+  "/home/chandan/catkin_ws/devel/lib/libmoveit_profiler.pdb"
+  "/home/chandan/catkin_ws/devel/lib/libmoveit_profiler.so.1.0.7"
+  "/home/chandan/catkin_ws/devel/lib/libmoveit_profiler.so"
 )
 
 # Per-language clean rules from dependency scanning.

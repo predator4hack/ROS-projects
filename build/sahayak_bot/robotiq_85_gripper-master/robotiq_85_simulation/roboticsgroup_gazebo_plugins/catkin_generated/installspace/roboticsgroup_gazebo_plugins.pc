@@ -1,4 +1,4 @@
-prefix=/usr/local
+prefix=/home/chandan/catkin_ws/install
 
 Name: roboticsgroup_gazebo_plugins
 Description: Description of roboticsgroup_gazebo_plugins

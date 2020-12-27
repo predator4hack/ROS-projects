@@ -1,4 +1,4 @@
-prefix=/usr/local
+prefix=/home/chandan/catkin_ws/install
 
 Name: panda_moveit_config
 Description: Description of panda_moveit_config

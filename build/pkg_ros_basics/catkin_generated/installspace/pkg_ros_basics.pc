@@ -1,4 +1,4 @@
-prefix=/usr/local
+prefix=/home/chandan/catkin_ws/install
 
 Name: pkg_ros_basics
 Description: Description of pkg_ros_basics

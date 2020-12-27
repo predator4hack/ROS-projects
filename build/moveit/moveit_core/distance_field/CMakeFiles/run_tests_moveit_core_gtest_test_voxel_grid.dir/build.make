@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/chandan/catkin_ws/build
 include moveit/moveit_core/distance_field/CMakeFiles/run_tests_moveit_core_gtest_test_voxel_grid.dir/progress.make
 
 moveit/moveit_core/distance_field/CMakeFiles/run_tests_moveit_core_gtest_test_voxel_grid:
-	cd /home/chandan/catkin_ws/build/moveit/moveit_core/distance_field && ../../../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/catkin/cmake/test/run_tests.py /home/chandan/catkin_ws/build/test_results/moveit_core/gtest-test_voxel_grid.xml "/home/chandan/catkin_ws/build/devel/lib/moveit_core/test_voxel_grid --gtest_output=xml:/home/chandan/catkin_ws/build/test_results/moveit_core/gtest-test_voxel_grid.xml"
+	cd /home/chandan/catkin_ws/build/moveit/moveit_core/distance_field && ../../../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/catkin/cmake/test/run_tests.py /home/chandan/catkin_ws/build/test_results/moveit_core/gtest-test_voxel_grid.xml "/home/chandan/catkin_ws/devel/lib/moveit_core/test_voxel_grid --gtest_output=xml:/home/chandan/catkin_ws/build/test_results/moveit_core/gtest-test_voxel_grid.xml"
 
 run_tests_moveit_core_gtest_test_voxel_grid: moveit/moveit_core/distance_field/CMakeFiles/run_tests_moveit_core_gtest_test_voxel_grid
 run_tests_moveit_core_gtest_test_voxel_grid: moveit/moveit_core/distance_field/CMakeFiles/run_tests_moveit_core_gtest_test_voxel_grid.dir/build.make

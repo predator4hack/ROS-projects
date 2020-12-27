@@ -1,4 +1,4 @@
-prefix=/usr/local
+prefix=/home/chandan/catkin_ws/install
 
 Name: si_utils
 Description: Description of si_utils

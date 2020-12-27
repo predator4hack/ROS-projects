@@ -68,13 +68,13 @@ set(moveit_tutorials_CONFIG_INCLUDED TRUE)
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
   set(moveit_tutorials_SOURCE_PREFIX /home/chandan/catkin_ws/src/moveit_tutorials)
-  set(moveit_tutorials_DEVEL_PREFIX /home/chandan/catkin_ws/build/devel)
+  set(moveit_tutorials_DEVEL_PREFIX /home/chandan/catkin_ws/devel)
   set(moveit_tutorials_INSTALL_PREFIX "")
   set(moveit_tutorials_PREFIX ${moveit_tutorials_DEVEL_PREFIX})
 else()
   set(moveit_tutorials_SOURCE_PREFIX "")
   set(moveit_tutorials_DEVEL_PREFIX "")
-  set(moveit_tutorials_INSTALL_PREFIX /usr/local)
+  set(moveit_tutorials_INSTALL_PREFIX /home/chandan/catkin_ws/install)
   set(moveit_tutorials_PREFIX ${moveit_tutorials_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /usr/local/lib;/home/chandan/catkin_ws/devel/lib;/opt/ros/melodic/lib)
+    foreach(path /home/chandan/catkin_ws/install/lib;/home/chandan/catkin_ws/devel/lib;/opt/ros/melodic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

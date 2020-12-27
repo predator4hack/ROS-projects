@@ -2,7 +2,7 @@
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/usr/local")
+  set(CMAKE_INSTALL_PREFIX "/home/chandan/catkin_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -47,13 +47,13 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtlebot3_example/msg" TYPE FILE FILES
-    "/home/chandan/catkin_ws/build/devel/share/turtlebot3_example/msg/Turtlebot3Action.msg"
-    "/home/chandan/catkin_ws/build/devel/share/turtlebot3_example/msg/Turtlebot3ActionGoal.msg"
-    "/home/chandan/catkin_ws/build/devel/share/turtlebot3_example/msg/Turtlebot3ActionResult.msg"
-    "/home/chandan/catkin_ws/build/devel/share/turtlebot3_example/msg/Turtlebot3ActionFeedback.msg"
-    "/home/chandan/catkin_ws/build/devel/share/turtlebot3_example/msg/Turtlebot3Goal.msg"
-    "/home/chandan/catkin_ws/build/devel/share/turtlebot3_example/msg/Turtlebot3Result.msg"
-    "/home/chandan/catkin_ws/build/devel/share/turtlebot3_example/msg/Turtlebot3Feedback.msg"
+    "/home/chandan/catkin_ws/devel/share/turtlebot3_example/msg/Turtlebot3Action.msg"
+    "/home/chandan/catkin_ws/devel/share/turtlebot3_example/msg/Turtlebot3ActionGoal.msg"
+    "/home/chandan/catkin_ws/devel/share/turtlebot3_example/msg/Turtlebot3ActionResult.msg"
+    "/home/chandan/catkin_ws/devel/share/turtlebot3_example/msg/Turtlebot3ActionFeedback.msg"
+    "/home/chandan/catkin_ws/devel/share/turtlebot3_example/msg/Turtlebot3Goal.msg"
+    "/home/chandan/catkin_ws/devel/share/turtlebot3_example/msg/Turtlebot3Result.msg"
+    "/home/chandan/catkin_ws/devel/share/turtlebot3_example/msg/Turtlebot3Feedback.msg"
     )
 endif()
 
@@ -62,31 +62,31 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/chandan/catkin_ws/build/devel/include/turtlebot3_example")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/chandan/catkin_ws/devel/include/turtlebot3_example")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/chandan/catkin_ws/build/devel/share/roseus/ros/turtlebot3_example")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/chandan/catkin_ws/devel/share/roseus/ros/turtlebot3_example")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/chandan/catkin_ws/build/devel/share/common-lisp/ros/turtlebot3_example")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/chandan/catkin_ws/devel/share/common-lisp/ros/turtlebot3_example")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gennodejs/ros" TYPE DIRECTORY FILES "/home/chandan/catkin_ws/build/devel/share/gennodejs/ros/turtlebot3_example")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gennodejs/ros" TYPE DIRECTORY FILES "/home/chandan/catkin_ws/devel/share/gennodejs/ros/turtlebot3_example")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  execute_process(COMMAND "/usr/bin/python2" -m compileall "/home/chandan/catkin_ws/build/devel/lib/python2.7/dist-packages/turtlebot3_example")
+  execute_process(COMMAND "/usr/bin/python2" -m compileall "/home/chandan/catkin_ws/devel/lib/python2.7/dist-packages/turtlebot3_example")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages" TYPE DIRECTORY FILES "/home/chandan/catkin_ws/build/devel/lib/python2.7/dist-packages/turtlebot3_example" REGEX "/\\_\\_init\\_\\_\\.py$" EXCLUDE REGEX "/\\_\\_init\\_\\_\\.pyc$" EXCLUDE)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages" TYPE DIRECTORY FILES "/home/chandan/catkin_ws/devel/lib/python2.7/dist-packages/turtlebot3_example" REGEX "/\\_\\_init\\_\\_\\.py$" EXCLUDE REGEX "/\\_\\_init\\_\\_\\.pyc$" EXCLUDE)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages" TYPE DIRECTORY FILES "/home/chandan/catkin_ws/build/devel/lib/python2.7/dist-packages/turtlebot3_example" FILES_MATCHING REGEX "/home/chandan/catkin_ws/build/devel/lib/python2.7/dist-packages/turtlebot3_example/.+/__init__.pyc?$")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages" TYPE DIRECTORY FILES "/home/chandan/catkin_ws/devel/lib/python2.7/dist-packages/turtlebot3_example" FILES_MATCHING REGEX "/home/chandan/catkin_ws/devel/lib/python2.7/dist-packages/turtlebot3_example/.+/__init__.pyc?$")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)

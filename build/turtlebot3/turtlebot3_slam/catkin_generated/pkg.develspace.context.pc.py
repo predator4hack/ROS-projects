@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "/home/chandan/catkin_ws/src/turtlebot3/turtle
 PROJECT_CATKIN_DEPENDS = "roscpp;sensor_msgs".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "".split(';') if "" != "" else []
 PROJECT_NAME = "turtlebot3_slam"
-PROJECT_SPACE_DIR = "/home/chandan/catkin_ws/build/devel"
+PROJECT_SPACE_DIR = "/home/chandan/catkin_ws/devel"
 PROJECT_VERSION = "1.2.4"

@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/test_distance_field.dir/test/test_distance_field.cpp.o"
-  "../../../devel/lib/moveit_core/test_distance_field.pdb"
-  "../../../devel/lib/moveit_core/test_distance_field"
+  "/home/chandan/catkin_ws/devel/lib/moveit_core/test_distance_field.pdb"
+  "/home/chandan/catkin_ws/devel/lib/moveit_core/test_distance_field"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/roboticsgroup_gazebo_mimic_joint_plugin.dir/src/mimic_joint_plugin.cpp.o"
-  "../../../../devel/lib/libroboticsgroup_gazebo_mimic_joint_plugin.pdb"
-  "../../../../devel/lib/libroboticsgroup_gazebo_mimic_joint_plugin.so"
+  "/home/chandan/catkin_ws/devel/lib/libroboticsgroup_gazebo_mimic_joint_plugin.pdb"
+  "/home/chandan/catkin_ws/devel/lib/libroboticsgroup_gazebo_mimic_joint_plugin.so"
 )
 
 # Per-language clean rules from dependency scanning.

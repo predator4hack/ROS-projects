@@ -2,7 +2,7 @@
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/usr/local")
+  set(CMAKE_INSTALL_PREFIX "/home/chandan/catkin_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -59,7 +59,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libobject_msgs_tools.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/chandan/catkin_ws/build/devel/lib/libobject_msgs_tools.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/chandan/catkin_ws/devel/lib/libobject_msgs_tools.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libobject_msgs_tools.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libobject_msgs_tools.so")
     file(RPATH_CHANGE
@@ -79,12 +79,12 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/object_msgs_tools/object_tf_broadcaster_node"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/object_msgs_tools" TYPE EXECUTABLE FILES "/home/chandan/catkin_ws/build/devel/lib/object_msgs_tools/object_tf_broadcaster_node")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/object_msgs_tools" TYPE EXECUTABLE FILES "/home/chandan/catkin_ws/devel/lib/object_msgs_tools/object_tf_broadcaster_node")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/object_msgs_tools/object_tf_broadcaster_node" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/object_msgs_tools/object_tf_broadcaster_node")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/object_msgs_tools/object_tf_broadcaster_node"
-         OLD_RPATH "/home/chandan/catkin_ws/build/devel/lib:/opt/ros/melodic/lib:"
+         OLD_RPATH "/home/chandan/catkin_ws/devel/lib:/opt/ros/melodic/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/object_msgs_tools/object_tf_broadcaster_node")
@@ -99,7 +99,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/object_msgs_tools/register_object_client"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/object_msgs_tools" TYPE EXECUTABLE FILES "/home/chandan/catkin_ws/build/devel/lib/object_msgs_tools/register_object_client")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/object_msgs_tools" TYPE EXECUTABLE FILES "/home/chandan/catkin_ws/devel/lib/object_msgs_tools/register_object_client")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/object_msgs_tools/register_object_client" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/object_msgs_tools/register_object_client")
     file(RPATH_CHANGE

@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/chandan/catkin_ws/build
 include moveit/moveit_ros/robot_interaction/CMakeFiles/_run_tests_moveit_ros_robot_interaction_gtest_locked_robot_state_test.dir/progress.make
 
 moveit/moveit_ros/robot_interaction/CMakeFiles/_run_tests_moveit_ros_robot_interaction_gtest_locked_robot_state_test:
-	cd /home/chandan/catkin_ws/build/moveit/moveit_ros/robot_interaction && ../../../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/catkin/cmake/test/run_tests.py /home/chandan/catkin_ws/build/test_results/moveit_ros_robot_interaction/gtest-locked_robot_state_test.xml "/home/chandan/catkin_ws/build/devel/lib/moveit_ros_robot_interaction/locked_robot_state_test --gtest_output=xml:/home/chandan/catkin_ws/build/test_results/moveit_ros_robot_interaction/gtest-locked_robot_state_test.xml"
+	cd /home/chandan/catkin_ws/build/moveit/moveit_ros/robot_interaction && ../../../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/catkin/cmake/test/run_tests.py /home/chandan/catkin_ws/build/test_results/moveit_ros_robot_interaction/gtest-locked_robot_state_test.xml "/home/chandan/catkin_ws/devel/lib/moveit_ros_robot_interaction/locked_robot_state_test --gtest_output=xml:/home/chandan/catkin_ws/build/test_results/moveit_ros_robot_interaction/gtest-locked_robot_state_test.xml"
 
 _run_tests_moveit_ros_robot_interaction_gtest_locked_robot_state_test: moveit/moveit_ros/robot_interaction/CMakeFiles/_run_tests_moveit_ros_robot_interaction_gtest_locked_robot_state_test
 _run_tests_moveit_ros_robot_interaction_gtest_locked_robot_state_test: moveit/moveit_ros/robot_interaction/CMakeFiles/_run_tests_moveit_ros_robot_interaction_gtest_locked_robot_state_test.dir/build.make

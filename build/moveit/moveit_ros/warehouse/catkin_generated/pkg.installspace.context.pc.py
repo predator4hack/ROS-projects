@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "${prefix}/include".split(';') if "${prefix}/i
 PROJECT_CATKIN_DEPENDS = "moveit_ros_planning;warehouse_ros;roscpp".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "-lmoveit_warehouse".split(';') if "-lmoveit_warehouse" != "" else []
 PROJECT_NAME = "moveit_ros_warehouse"
-PROJECT_SPACE_DIR = "/usr/local"
+PROJECT_SPACE_DIR = "/home/chandan/catkin_ws/install"
 PROJECT_VERSION = "1.0.7"

@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/gazebo_test_tools_generate_messages_nodejs"
-  "../../../devel/share/gennodejs/ros/gazebo_test_tools/srv/RecognizeGazeboObject.js"
+  "/home/chandan/catkin_ws/devel/share/gennodejs/ros/gazebo_test_tools/srv/RecognizeGazeboObject.js"
 )
 
 # Per-language clean rules from dependency scanning.

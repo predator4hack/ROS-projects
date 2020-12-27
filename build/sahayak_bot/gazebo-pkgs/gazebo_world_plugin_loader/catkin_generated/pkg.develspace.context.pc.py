@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "/home/chandan/catkin_ws/src/sahayak_bot/gazeb
 PROJECT_CATKIN_DEPENDS = "roscpp;gazebo_ros;gazebo_ros".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "-lgazebo_world_plugin_loader".split(';') if "-lgazebo_world_plugin_loader" != "" else []
 PROJECT_NAME = "gazebo_world_plugin_loader"
-PROJECT_SPACE_DIR = "/home/chandan/catkin_ws/build/devel"
+PROJECT_SPACE_DIR = "/home/chandan/catkin_ws/devel"
 PROJECT_VERSION = "1.0.2"

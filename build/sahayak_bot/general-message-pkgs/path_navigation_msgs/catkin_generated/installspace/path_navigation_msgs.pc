@@ -1,4 +1,4 @@
-prefix=/usr/local
+prefix=/home/chandan/catkin_ws/install
 
 Name: path_navigation_msgs
 Description: Description of path_navigation_msgs

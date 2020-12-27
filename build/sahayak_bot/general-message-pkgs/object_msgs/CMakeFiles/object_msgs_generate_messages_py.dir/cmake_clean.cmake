@@ -1,11 +1,11 @@
 file(REMOVE_RECURSE
   "CMakeFiles/object_msgs_generate_messages_py"
-  "../../../devel/lib/python2.7/dist-packages/object_msgs/msg/_ObjectPose.py"
-  "../../../devel/lib/python2.7/dist-packages/object_msgs/msg/_Object.py"
-  "../../../devel/lib/python2.7/dist-packages/object_msgs/srv/_RegisterObject.py"
-  "../../../devel/lib/python2.7/dist-packages/object_msgs/srv/_ObjectInfo.py"
-  "../../../devel/lib/python2.7/dist-packages/object_msgs/msg/__init__.py"
-  "../../../devel/lib/python2.7/dist-packages/object_msgs/srv/__init__.py"
+  "/home/chandan/catkin_ws/devel/lib/python2.7/dist-packages/object_msgs/msg/_ObjectPose.py"
+  "/home/chandan/catkin_ws/devel/lib/python2.7/dist-packages/object_msgs/msg/_Object.py"
+  "/home/chandan/catkin_ws/devel/lib/python2.7/dist-packages/object_msgs/srv/_RegisterObject.py"
+  "/home/chandan/catkin_ws/devel/lib/python2.7/dist-packages/object_msgs/srv/_ObjectInfo.py"
+  "/home/chandan/catkin_ws/devel/lib/python2.7/dist-packages/object_msgs/msg/__init__.py"
+  "/home/chandan/catkin_ws/devel/lib/python2.7/dist-packages/object_msgs/srv/__init__.py"
 )
 
 # Per-language clean rules from dependency scanning.

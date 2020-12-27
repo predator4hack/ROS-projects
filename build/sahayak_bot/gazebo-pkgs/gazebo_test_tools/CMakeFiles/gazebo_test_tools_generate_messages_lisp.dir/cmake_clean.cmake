@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/gazebo_test_tools_generate_messages_lisp"
-  "../../../devel/share/common-lisp/ros/gazebo_test_tools/srv/RecognizeGazeboObject.lisp"
+  "/home/chandan/catkin_ws/devel/share/common-lisp/ros/gazebo_test_tools/srv/RecognizeGazeboObject.lisp"
 )
 
 # Per-language clean rules from dependency scanning.

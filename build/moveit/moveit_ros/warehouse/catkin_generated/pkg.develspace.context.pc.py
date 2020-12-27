@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "/home/chandan/catkin_ws/src/moveit/moveit_ros
 PROJECT_CATKIN_DEPENDS = "moveit_ros_planning;warehouse_ros;roscpp".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "-lmoveit_warehouse".split(';') if "-lmoveit_warehouse" != "" else []
 PROJECT_NAME = "moveit_ros_warehouse"
-PROJECT_SPACE_DIR = "/home/chandan/catkin_ws/build/devel"
+PROJECT_SPACE_DIR = "/home/chandan/catkin_ws/devel"
 PROJECT_VERSION = "1.0.7"

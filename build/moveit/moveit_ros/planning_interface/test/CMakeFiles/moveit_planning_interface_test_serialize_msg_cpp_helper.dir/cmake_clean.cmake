@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/moveit_planning_interface_test_serialize_msg_cpp_helper.dir/serialize_msg_python_cpp_helpers.cpp.o"
-  "../../../../devel/lib/python2.7/dist-packages/moveit_ros_planning_interface/_moveit_planning_interface_test_serialize_msg_cpp_helper.pdb"
-  "../../../../devel/lib/python2.7/dist-packages/moveit_ros_planning_interface/_moveit_planning_interface_test_serialize_msg_cpp_helper.so.1.0.7"
-  "../../../../devel/lib/python2.7/dist-packages/moveit_ros_planning_interface/_moveit_planning_interface_test_serialize_msg_cpp_helper.so"
+  "/home/chandan/catkin_ws/devel/lib/python2.7/dist-packages/moveit_ros_planning_interface/_moveit_planning_interface_test_serialize_msg_cpp_helper.pdb"
+  "/home/chandan/catkin_ws/devel/lib/python2.7/dist-packages/moveit_ros_planning_interface/_moveit_planning_interface_test_serialize_msg_cpp_helper.so.1.0.7"
+  "/home/chandan/catkin_ws/devel/lib/python2.7/dist-packages/moveit_ros_planning_interface/_moveit_planning_interface_test_serialize_msg_cpp_helper.so"
 )
 
 # Per-language clean rules from dependency scanning.

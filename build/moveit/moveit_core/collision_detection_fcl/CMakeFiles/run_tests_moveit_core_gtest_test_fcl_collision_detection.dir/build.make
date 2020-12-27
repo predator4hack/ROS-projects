@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/chandan/catkin_ws/build
 include moveit/moveit_core/collision_detection_fcl/CMakeFiles/run_tests_moveit_core_gtest_test_fcl_collision_detection.dir/progress.make
 
 moveit/moveit_core/collision_detection_fcl/CMakeFiles/run_tests_moveit_core_gtest_test_fcl_collision_detection:
-	cd /home/chandan/catkin_ws/build/moveit/moveit_core/collision_detection_fcl && ../../../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/catkin/cmake/test/run_tests.py /home/chandan/catkin_ws/build/test_results/moveit_core/gtest-test_fcl_collision_detection.xml "/home/chandan/catkin_ws/build/devel/lib/moveit_core/test_fcl_collision_detection --gtest_output=xml:/home/chandan/catkin_ws/build/test_results/moveit_core/gtest-test_fcl_collision_detection.xml"
+	cd /home/chandan/catkin_ws/build/moveit/moveit_core/collision_detection_fcl && ../../../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/catkin/cmake/test/run_tests.py /home/chandan/catkin_ws/build/test_results/moveit_core/gtest-test_fcl_collision_detection.xml "/home/chandan/catkin_ws/devel/lib/moveit_core/test_fcl_collision_detection --gtest_output=xml:/home/chandan/catkin_ws/build/test_results/moveit_core/gtest-test_fcl_collision_detection.xml"
 
 run_tests_moveit_core_gtest_test_fcl_collision_detection: moveit/moveit_core/collision_detection_fcl/CMakeFiles/run_tests_moveit_core_gtest_test_fcl_collision_detection
 run_tests_moveit_core_gtest_test_fcl_collision_detection: moveit/moveit_core/collision_detection_fcl/CMakeFiles/run_tests_moveit_core_gtest_test_fcl_collision_detection.dir/build.make

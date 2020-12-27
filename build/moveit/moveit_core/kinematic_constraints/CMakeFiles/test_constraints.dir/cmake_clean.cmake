@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/test_constraints.dir/test/test_constraints.cpp.o"
-  "../../../devel/lib/moveit_core/test_constraints.pdb"
-  "../../../devel/lib/moveit_core/test_constraints"
+  "/home/chandan/catkin_ws/devel/lib/moveit_core/test_constraints.pdb"
+  "/home/chandan/catkin_ws/devel/lib/moveit_core/test_constraints"
 )
 
 # Per-language clean rules from dependency scanning.

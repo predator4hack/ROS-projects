@@ -1,4 +1,4 @@
-prefix=/usr/local
+prefix=/home/chandan/catkin_ws/install
 
 Name: chomp_motion_planner
 Description: Description of chomp_motion_planner

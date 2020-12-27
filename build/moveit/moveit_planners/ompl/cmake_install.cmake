@@ -2,7 +2,7 @@
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/usr/local")
+  set(CMAKE_INSTALL_PREFIX "/home/chandan/catkin_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,19 +38,19 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/moveit_planners_ompl" TYPE FILE FILES "/home/chandan/catkin_ws/build/devel/include/moveit_planners_ompl/OMPLDynamicReconfigureConfig.h")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/moveit_planners_ompl" TYPE FILE FILES "/home/chandan/catkin_ws/devel/include/moveit_planners_ompl/OMPLDynamicReconfigureConfig.h")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/moveit_planners_ompl" TYPE FILE FILES "/home/chandan/catkin_ws/build/devel/lib/python2.7/dist-packages/moveit_planners_ompl/__init__.py")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/moveit_planners_ompl" TYPE FILE FILES "/home/chandan/catkin_ws/devel/lib/python2.7/dist-packages/moveit_planners_ompl/__init__.py")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  execute_process(COMMAND "/usr/bin/python2" -m compileall "/home/chandan/catkin_ws/build/devel/lib/python2.7/dist-packages/moveit_planners_ompl/cfg")
+  execute_process(COMMAND "/usr/bin/python2" -m compileall "/home/chandan/catkin_ws/devel/lib/python2.7/dist-packages/moveit_planners_ompl/cfg")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/moveit_planners_ompl" TYPE DIRECTORY FILES "/home/chandan/catkin_ws/build/devel/lib/python2.7/dist-packages/moveit_planners_ompl/cfg")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/moveit_planners_ompl" TYPE DIRECTORY FILES "/home/chandan/catkin_ws/devel/lib/python2.7/dist-packages/moveit_planners_ompl/cfg")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)

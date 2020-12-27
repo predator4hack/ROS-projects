@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/test_fcl_collision_detection.dir/test/test_fcl_collision_detection.cpp.o"
-  "../../../devel/lib/moveit_core/test_fcl_collision_detection.pdb"
-  "../../../devel/lib/moveit_core/test_fcl_collision_detection"
+  "/home/chandan/catkin_ws/devel/lib/moveit_core/test_fcl_collision_detection.pdb"
+  "/home/chandan/catkin_ws/devel/lib/moveit_core/test_fcl_collision_detection"
 )
 
 # Per-language clean rules from dependency scanning.

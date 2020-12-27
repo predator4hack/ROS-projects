@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/moveit_print_planning_scene_info.dir/src/print_planning_scene_info.cpp.o"
-  "../../../../devel/lib/moveit_ros_planning/moveit_print_planning_scene_info.pdb"
-  "../../../../devel/lib/moveit_ros_planning/moveit_print_planning_scene_info"
+  "/home/chandan/catkin_ws/devel/lib/moveit_ros_planning/moveit_print_planning_scene_info.pdb"
+  "/home/chandan/catkin_ws/devel/lib/moveit_ros_planning/moveit_print_planning_scene_info"
 )
 
 # Per-language clean rules from dependency scanning.

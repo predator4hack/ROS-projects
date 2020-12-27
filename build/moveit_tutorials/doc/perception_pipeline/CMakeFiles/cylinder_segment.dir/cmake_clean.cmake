@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/cylinder_segment.dir/src/cylinder_segment.cpp.o"
-  "../../../devel/lib/moveit_tutorials/cylinder_segment.pdb"
-  "../../../devel/lib/moveit_tutorials/cylinder_segment"
+  "/home/chandan/catkin_ws/devel/lib/moveit_tutorials/cylinder_segment.pdb"
+  "/home/chandan/catkin_ws/devel/lib/moveit_tutorials/cylinder_segment"
 )
 
 # Per-language clean rules from dependency scanning.

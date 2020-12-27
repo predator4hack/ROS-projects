@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/moveit_version.dir/version.cpp.o"
-  "../../../devel/lib/moveit_core/moveit_version.pdb"
-  "../../../devel/lib/moveit_core/moveit_version"
+  "/home/chandan/catkin_ws/devel/lib/moveit_core/moveit_version.pdb"
+  "/home/chandan/catkin_ws/devel/lib/moveit_core/moveit_version"
 )
 
 # Per-language clean rules from dependency scanning.

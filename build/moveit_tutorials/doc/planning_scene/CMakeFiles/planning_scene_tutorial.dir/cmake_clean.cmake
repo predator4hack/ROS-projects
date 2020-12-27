@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/planning_scene_tutorial.dir/src/planning_scene_tutorial.cpp.o"
-  "../../../devel/lib/moveit_tutorials/planning_scene_tutorial.pdb"
-  "../../../devel/lib/moveit_tutorials/planning_scene_tutorial"
+  "/home/chandan/catkin_ws/devel/lib/moveit_tutorials/planning_scene_tutorial.pdb"
+  "/home/chandan/catkin_ws/devel/lib/moveit_tutorials/planning_scene_tutorial"
 )
 
 # Per-language clean rules from dependency scanning.

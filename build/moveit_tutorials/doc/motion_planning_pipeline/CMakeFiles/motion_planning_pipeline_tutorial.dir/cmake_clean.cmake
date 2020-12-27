@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/motion_planning_pipeline_tutorial.dir/src/motion_planning_pipeline_tutorial.cpp.o"
-  "../../../devel/lib/moveit_tutorials/motion_planning_pipeline_tutorial.pdb"
-  "../../../devel/lib/moveit_tutorials/motion_planning_pipeline_tutorial"
+  "/home/chandan/catkin_ws/devel/lib/moveit_tutorials/motion_planning_pipeline_tutorial.pdb"
+  "/home/chandan/catkin_ws/devel/lib/moveit_tutorials/motion_planning_pipeline_tutorial"
 )
 
 # Per-language clean rules from dependency scanning.

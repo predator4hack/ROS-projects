@@ -11,8 +11,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/moveit_setup_assistant_tools_autogen.dir/AutogenOldSettings.cmake"
   "CMakeFiles/test_reading_writing_config.dir/test/moveit_config_data_test.cpp.o"
   "CMakeFiles/test_reading_writing_config.dir/test_reading_writing_config_autogen/mocs_compilation.cpp.o"
-  "../../devel/lib/moveit_setup_assistant/test_reading_writing_config.pdb"
-  "../../devel/lib/moveit_setup_assistant/test_reading_writing_config"
+  "/home/chandan/catkin_ws/devel/lib/moveit_setup_assistant/test_reading_writing_config.pdb"
+  "/home/chandan/catkin_ws/devel/lib/moveit_setup_assistant/test_reading_writing_config"
 )
 
 # Per-language clean rules from dependency scanning.

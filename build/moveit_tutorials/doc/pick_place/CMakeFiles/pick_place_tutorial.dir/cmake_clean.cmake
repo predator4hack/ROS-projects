@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/pick_place_tutorial.dir/src/pick_place_tutorial.cpp.o"
-  "../../../devel/lib/moveit_tutorials/pick_place_tutorial.pdb"
-  "../../../devel/lib/moveit_tutorials/pick_place_tutorial"
+  "/home/chandan/catkin_ws/devel/lib/moveit_tutorials/pick_place_tutorial.pdb"
+  "/home/chandan/catkin_ws/devel/lib/moveit_tutorials/pick_place_tutorial"
 )
 
 # Per-language clean rules from dependency scanning.

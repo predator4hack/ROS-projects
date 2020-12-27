@@ -9,9 +9,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/moveit_robot_model.dir/src/prismatic_joint_model.cpp.o"
   "CMakeFiles/moveit_robot_model.dir/src/revolute_joint_model.cpp.o"
   "CMakeFiles/moveit_robot_model.dir/src/robot_model.cpp.o"
-  "../../../devel/lib/libmoveit_robot_model.pdb"
-  "../../../devel/lib/libmoveit_robot_model.so.1.0.7"
-  "../../../devel/lib/libmoveit_robot_model.so"
+  "/home/chandan/catkin_ws/devel/lib/libmoveit_robot_model.pdb"
+  "/home/chandan/catkin_ws/devel/lib/libmoveit_robot_model.so.1.0.7"
+  "/home/chandan/catkin_ws/devel/lib/libmoveit_robot_model.so"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/test_time_parameterization.dir/test/test_time_parameterization.cpp.o"
-  "../../../devel/lib/moveit_core/test_time_parameterization.pdb"
-  "../../../devel/lib/moveit_core/test_time_parameterization"
+  "/home/chandan/catkin_ws/devel/lib/moveit_core/test_time_parameterization.pdb"
+  "/home/chandan/catkin_ws/devel/lib/moveit_core/test_time_parameterization"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -20,7 +20,7 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/home/chandan/catkin_ws/src/moveit_tutorials/doc/interactivity/include"
-  "devel/include"
+  "/home/chandan/catkin_ws/devel/include"
   "/home/chandan/catkin_ws/src/moveit/moveit_core/background_processing/include"
   "/home/chandan/catkin_ws/src/moveit/moveit_core/exceptions/include"
   "/home/chandan/catkin_ws/src/moveit/moveit_core/backtrace/include"

@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/moveit_ros_occupancy_map_server.dir/src/occupancy_map_server.cpp.o"
-  "../../../devel/lib/moveit_ros_occupancy_map_monitor/moveit_ros_occupancy_map_server.pdb"
-  "../../../devel/lib/moveit_ros_occupancy_map_monitor/moveit_ros_occupancy_map_server"
+  "/home/chandan/catkin_ws/devel/lib/moveit_ros_occupancy_map_monitor/moveit_ros_occupancy_map_server.pdb"
+  "/home/chandan/catkin_ws/devel/lib/moveit_ros_occupancy_map_monitor/moveit_ros_occupancy_map_server"
 )
 
 # Per-language clean rules from dependency scanning.

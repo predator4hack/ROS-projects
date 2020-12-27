@@ -22,7 +22,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/home/chandan/catkin_ws/src/moveit/moveit_kinematics/srv_kinematics_plugin/include"
   "/home/chandan/catkin_ws/src/moveit/moveit_kinematics/cached_ik_kinematics_plugin/include"
   "/usr/include/eigen3"
-  "devel/include"
+  "/home/chandan/catkin_ws/devel/include"
   "/home/chandan/catkin_ws/src/moveit/moveit_core/background_processing/include"
   "/home/chandan/catkin_ws/src/moveit/moveit_core/exceptions/include"
   "/home/chandan/catkin_ws/src/moveit/moveit_core/backtrace/include"

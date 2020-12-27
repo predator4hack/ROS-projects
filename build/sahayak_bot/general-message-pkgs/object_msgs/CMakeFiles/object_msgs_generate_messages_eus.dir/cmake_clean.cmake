@@ -1,10 +1,10 @@
 file(REMOVE_RECURSE
   "CMakeFiles/object_msgs_generate_messages_eus"
-  "../../../devel/share/roseus/ros/object_msgs/msg/ObjectPose.l"
-  "../../../devel/share/roseus/ros/object_msgs/msg/Object.l"
-  "../../../devel/share/roseus/ros/object_msgs/srv/RegisterObject.l"
-  "../../../devel/share/roseus/ros/object_msgs/srv/ObjectInfo.l"
-  "../../../devel/share/roseus/ros/object_msgs/manifest.l"
+  "/home/chandan/catkin_ws/devel/share/roseus/ros/object_msgs/msg/ObjectPose.l"
+  "/home/chandan/catkin_ws/devel/share/roseus/ros/object_msgs/msg/Object.l"
+  "/home/chandan/catkin_ws/devel/share/roseus/ros/object_msgs/srv/RegisterObject.l"
+  "/home/chandan/catkin_ws/devel/share/roseus/ros/object_msgs/srv/ObjectInfo.l"
+  "/home/chandan/catkin_ws/devel/share/roseus/ros/object_msgs/manifest.l"
 )
 
 # Per-language clean rules from dependency scanning.

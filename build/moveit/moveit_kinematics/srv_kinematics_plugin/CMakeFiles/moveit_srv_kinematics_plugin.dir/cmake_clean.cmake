@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/moveit_srv_kinematics_plugin.dir/src/srv_kinematics_plugin.cpp.o"
-  "../../../devel/lib/libmoveit_srv_kinematics_plugin.pdb"
-  "../../../devel/lib/libmoveit_srv_kinematics_plugin.so.1.0.7"
-  "../../../devel/lib/libmoveit_srv_kinematics_plugin.so"
+  "/home/chandan/catkin_ws/devel/lib/libmoveit_srv_kinematics_plugin.pdb"
+  "/home/chandan/catkin_ws/devel/lib/libmoveit_srv_kinematics_plugin.so.1.0.7"
+  "/home/chandan/catkin_ws/devel/lib/libmoveit_srv_kinematics_plugin.so"
 )
 
 # Per-language clean rules from dependency scanning.

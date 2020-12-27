@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "${prefix}/include".split(';') if "${prefix}/i
 PROJECT_CATKIN_DEPENDS = "".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "-lchomp_motion_planner".split(';') if "-lchomp_motion_planner" != "" else []
 PROJECT_NAME = "chomp_motion_planner"
-PROJECT_SPACE_DIR = "/usr/local"
+PROJECT_SPACE_DIR = "/home/chandan/catkin_ws/install"
 PROJECT_VERSION = "1.0.7"

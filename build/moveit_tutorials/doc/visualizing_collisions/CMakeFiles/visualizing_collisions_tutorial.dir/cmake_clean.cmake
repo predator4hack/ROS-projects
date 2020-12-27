@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/visualizing_collisions_tutorial.dir/src/visualizing_collisions_tutorial.cpp.o"
-  "../../../devel/lib/moveit_tutorials/visualizing_collisions_tutorial.pdb"
-  "../../../devel/lib/moveit_tutorials/visualizing_collisions_tutorial"
+  "/home/chandan/catkin_ws/devel/lib/moveit_tutorials/visualizing_collisions_tutorial.pdb"
+  "/home/chandan/catkin_ws/devel/lib/moveit_tutorials/visualizing_collisions_tutorial"
 )
 
 # Per-language clean rules from dependency scanning.

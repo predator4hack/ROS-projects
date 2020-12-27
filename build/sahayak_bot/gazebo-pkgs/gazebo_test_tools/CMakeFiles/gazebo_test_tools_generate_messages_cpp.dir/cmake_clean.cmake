@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/gazebo_test_tools_generate_messages_cpp"
-  "../../../devel/include/gazebo_test_tools/RecognizeGazeboObject.h"
+  "/home/chandan/catkin_ws/devel/include/gazebo_test_tools/RecognizeGazeboObject.h"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/gazebo_test_tools_generate_messages_py"
-  "../../../devel/lib/python2.7/dist-packages/gazebo_test_tools/srv/_RecognizeGazeboObject.py"
-  "../../../devel/lib/python2.7/dist-packages/gazebo_test_tools/srv/__init__.py"
+  "/home/chandan/catkin_ws/devel/lib/python2.7/dist-packages/gazebo_test_tools/srv/_RecognizeGazeboObject.py"
+  "/home/chandan/catkin_ws/devel/lib/python2.7/dist-packages/gazebo_test_tools/srv/__init__.py"
 )
 
 # Per-language clean rules from dependency scanning.

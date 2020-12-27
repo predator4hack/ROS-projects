@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/moveit_warehouse_broadcast.dir/src/broadcast.cpp.o"
-  "../../../../devel/lib/moveit_ros_warehouse/moveit_warehouse_broadcast.pdb"
-  "../../../../devel/lib/moveit_ros_warehouse/moveit_warehouse_broadcast"
+  "/home/chandan/catkin_ws/devel/lib/moveit_ros_warehouse/moveit_warehouse_broadcast.pdb"
+  "/home/chandan/catkin_ws/devel/lib/moveit_ros_warehouse/moveit_warehouse_broadcast"
 )
 
 # Per-language clean rules from dependency scanning.

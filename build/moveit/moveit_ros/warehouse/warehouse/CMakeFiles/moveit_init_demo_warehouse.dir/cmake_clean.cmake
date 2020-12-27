@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/moveit_init_demo_warehouse.dir/src/initialize_demo_db.cpp.o"
-  "../../../../devel/lib/moveit_ros_warehouse/moveit_init_demo_warehouse.pdb"
-  "../../../../devel/lib/moveit_ros_warehouse/moveit_init_demo_warehouse"
+  "/home/chandan/catkin_ws/devel/lib/moveit_ros_warehouse/moveit_init_demo_warehouse.pdb"
+  "/home/chandan/catkin_ws/devel/lib/moveit_ros_warehouse/moveit_init_demo_warehouse"
 )
 
 # Per-language clean rules from dependency scanning.

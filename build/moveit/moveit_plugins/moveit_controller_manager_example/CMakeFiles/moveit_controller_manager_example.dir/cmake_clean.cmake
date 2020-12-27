@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/moveit_controller_manager_example.dir/src/moveit_controller_manager_example.cpp.o"
-  "../../../devel/lib/libmoveit_controller_manager_example.pdb"
-  "../../../devel/lib/libmoveit_controller_manager_example.so.1.0.7"
-  "../../../devel/lib/libmoveit_controller_manager_example.so"
+  "/home/chandan/catkin_ws/devel/lib/libmoveit_controller_manager_example.pdb"
+  "/home/chandan/catkin_ws/devel/lib/libmoveit_controller_manager_example.so.1.0.7"
+  "/home/chandan/catkin_ws/devel/lib/libmoveit_controller_manager_example.so"
 )
 
 # Per-language clean rules from dependency scanning.

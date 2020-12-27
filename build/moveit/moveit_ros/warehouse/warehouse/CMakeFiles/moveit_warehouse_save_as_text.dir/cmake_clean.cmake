@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/moveit_warehouse_save_as_text.dir/src/save_as_text.cpp.o"
-  "../../../../devel/lib/moveit_ros_warehouse/moveit_warehouse_save_as_text.pdb"
-  "../../../../devel/lib/moveit_ros_warehouse/moveit_warehouse_save_as_text"
+  "/home/chandan/catkin_ws/devel/lib/moveit_ros_warehouse/moveit_warehouse_save_as_text.pdb"
+  "/home/chandan/catkin_ws/devel/lib/moveit_ros_warehouse/moveit_warehouse_save_as_text"
 )
 
 # Per-language clean rules from dependency scanning.

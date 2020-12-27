@@ -2,7 +2,7 @@
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/usr/local")
+  set(CMAKE_INSTALL_PREFIX "/home/chandan/catkin_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -46,27 +46,27 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/chandan/catkin_ws/build/devel/include/gazebo_test_tools")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/chandan/catkin_ws/devel/include/gazebo_test_tools")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/chandan/catkin_ws/build/devel/share/roseus/ros/gazebo_test_tools")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/chandan/catkin_ws/devel/share/roseus/ros/gazebo_test_tools")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/chandan/catkin_ws/build/devel/share/common-lisp/ros/gazebo_test_tools")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/chandan/catkin_ws/devel/share/common-lisp/ros/gazebo_test_tools")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gennodejs/ros" TYPE DIRECTORY FILES "/home/chandan/catkin_ws/build/devel/share/gennodejs/ros/gazebo_test_tools")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gennodejs/ros" TYPE DIRECTORY FILES "/home/chandan/catkin_ws/devel/share/gennodejs/ros/gazebo_test_tools")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  execute_process(COMMAND "/usr/bin/python2" -m compileall "/home/chandan/catkin_ws/build/devel/lib/python2.7/dist-packages/gazebo_test_tools")
+  execute_process(COMMAND "/usr/bin/python2" -m compileall "/home/chandan/catkin_ws/devel/lib/python2.7/dist-packages/gazebo_test_tools")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages" TYPE DIRECTORY FILES "/home/chandan/catkin_ws/build/devel/lib/python2.7/dist-packages/gazebo_test_tools")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages" TYPE DIRECTORY FILES "/home/chandan/catkin_ws/devel/lib/python2.7/dist-packages/gazebo_test_tools")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -95,7 +95,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libgazebo_test_tools.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/chandan/catkin_ws/build/devel/lib/libgazebo_test_tools.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/chandan/catkin_ws/devel/lib/libgazebo_test_tools.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libgazebo_test_tools.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libgazebo_test_tools.so")
     file(RPATH_CHANGE
@@ -115,12 +115,12 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/gazebo_test_tools/cube_spawner"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/gazebo_test_tools" TYPE EXECUTABLE FILES "/home/chandan/catkin_ws/build/devel/lib/gazebo_test_tools/cube_spawner")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/gazebo_test_tools" TYPE EXECUTABLE FILES "/home/chandan/catkin_ws/devel/lib/gazebo_test_tools/cube_spawner")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/gazebo_test_tools/cube_spawner" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/gazebo_test_tools/cube_spawner")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/gazebo_test_tools/cube_spawner"
-         OLD_RPATH "/usr/lib/x86_64-linux-gnu/gazebo-9/plugins:/opt/ros/melodic/lib:/home/chandan/catkin_ws/build/devel/lib:"
+         OLD_RPATH "/usr/lib/x86_64-linux-gnu/gazebo-9/plugins:/opt/ros/melodic/lib:/home/chandan/catkin_ws/devel/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/gazebo_test_tools/cube_spawner")
@@ -135,7 +135,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libfake_object_recognizer.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/chandan/catkin_ws/build/devel/lib/libfake_object_recognizer.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/chandan/catkin_ws/devel/lib/libfake_object_recognizer.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libfake_object_recognizer.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libfake_object_recognizer.so")
     file(RPATH_CHANGE
@@ -155,7 +155,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/gazebo_test_tools/set_gazebo_physics_client"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/gazebo_test_tools" TYPE EXECUTABLE FILES "/home/chandan/catkin_ws/build/devel/lib/gazebo_test_tools/set_gazebo_physics_client")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/gazebo_test_tools" TYPE EXECUTABLE FILES "/home/chandan/catkin_ws/devel/lib/gazebo_test_tools/set_gazebo_physics_client")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/gazebo_test_tools/set_gazebo_physics_client" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/gazebo_test_tools/set_gazebo_physics_client")
     file(RPATH_CHANGE
@@ -175,12 +175,12 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/gazebo_test_tools/fake_object_recognizer_node"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/gazebo_test_tools" TYPE EXECUTABLE FILES "/home/chandan/catkin_ws/build/devel/lib/gazebo_test_tools/fake_object_recognizer_node")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/gazebo_test_tools" TYPE EXECUTABLE FILES "/home/chandan/catkin_ws/devel/lib/gazebo_test_tools/fake_object_recognizer_node")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/gazebo_test_tools/fake_object_recognizer_node" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/gazebo_test_tools/fake_object_recognizer_node")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/gazebo_test_tools/fake_object_recognizer_node"
-         OLD_RPATH "/usr/lib/x86_64-linux-gnu/gazebo-9/plugins:/opt/ros/melodic/lib:/home/chandan/catkin_ws/build/devel/lib:"
+         OLD_RPATH "/usr/lib/x86_64-linux-gnu/gazebo-9/plugins:/opt/ros/melodic/lib:/home/chandan/catkin_ws/devel/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/gazebo_test_tools/fake_object_recognizer_node")
@@ -195,7 +195,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/gazebo_test_tools/fake_object_recognizer_cmd"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/gazebo_test_tools" TYPE EXECUTABLE FILES "/home/chandan/catkin_ws/build/devel/lib/gazebo_test_tools/fake_object_recognizer_cmd")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/gazebo_test_tools" TYPE EXECUTABLE FILES "/home/chandan/catkin_ws/devel/lib/gazebo_test_tools/fake_object_recognizer_cmd")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/gazebo_test_tools/fake_object_recognizer_cmd" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/gazebo_test_tools/fake_object_recognizer_cmd")
     file(RPATH_CHANGE

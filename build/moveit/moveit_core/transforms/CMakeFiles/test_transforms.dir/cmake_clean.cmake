@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/test_transforms.dir/test/test_transforms.cpp.o"
-  "../../../devel/lib/moveit_core/test_transforms.pdb"
-  "../../../devel/lib/moveit_core/test_transforms"
+  "/home/chandan/catkin_ws/devel/lib/moveit_core/test_transforms.pdb"
+  "/home/chandan/catkin_ws/devel/lib/moveit_core/test_transforms"
 )
 
 # Per-language clean rules from dependency scanning.

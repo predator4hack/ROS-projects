@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "/home/chandan/catkin_ws/src/moveit/moveit_pla
 PROJECT_CATKIN_DEPENDS = "roscpp;moveit_core;pluginlib".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "-lmoveit_planners_chomp".split(';') if "-lmoveit_planners_chomp" != "" else []
 PROJECT_NAME = "moveit_planners_chomp"
-PROJECT_SPACE_DIR = "/home/chandan/catkin_ws/build/devel"
+PROJECT_SPACE_DIR = "/home/chandan/catkin_ws/devel"
 PROJECT_VERSION = "1.0.7"

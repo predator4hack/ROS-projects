@@ -11,8 +11,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/moveit_setup_assistant_tools_autogen.dir/AutogenOldSettings.cmake"
   "CMakeFiles/moveit_setup_assistant.dir/src/setup_assistant_main.cpp.o"
   "CMakeFiles/moveit_setup_assistant.dir/moveit_setup_assistant_autogen/mocs_compilation.cpp.o"
-  "../../devel/lib/moveit_setup_assistant/moveit_setup_assistant.pdb"
-  "../../devel/lib/moveit_setup_assistant/moveit_setup_assistant"
+  "/home/chandan/catkin_ws/devel/lib/moveit_setup_assistant/moveit_setup_assistant.pdb"
+  "/home/chandan/catkin_ws/devel/lib/moveit_setup_assistant/moveit_setup_assistant"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/moveit_semantic_world.dir/src/semantic_world.cpp.o"
-  "../../../../devel/lib/libmoveit_semantic_world.pdb"
-  "../../../../devel/lib/libmoveit_semantic_world.so.1.0.7"
-  "../../../../devel/lib/libmoveit_semantic_world.so"
+  "/home/chandan/catkin_ws/devel/lib/libmoveit_semantic_world.pdb"
+  "/home/chandan/catkin_ws/devel/lib/libmoveit_semantic_world.so.1.0.7"
+  "/home/chandan/catkin_ws/devel/lib/libmoveit_semantic_world.so"
 )
 
 # Per-language clean rules from dependency scanning.

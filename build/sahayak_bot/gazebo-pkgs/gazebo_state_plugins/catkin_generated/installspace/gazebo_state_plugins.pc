@@ -1,4 +1,4 @@
-prefix=/usr/local
+prefix=/home/chandan/catkin_ws/install
 
 Name: gazebo_state_plugins
 Description: Description of gazebo_state_plugins

@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/flat_world_imu_node.dir/src/flat_world_imu_node.cpp.o"
-  "../../devel/lib/turtlebot3_slam/flat_world_imu_node.pdb"
-  "../../devel/lib/turtlebot3_slam/flat_world_imu_node"
+  "/home/chandan/catkin_ws/devel/lib/turtlebot3_slam/flat_world_imu_node.pdb"
+  "/home/chandan/catkin_ws/devel/lib/turtlebot3_slam/flat_world_imu_node"
 )
 
 # Per-language clean rules from dependency scanning.

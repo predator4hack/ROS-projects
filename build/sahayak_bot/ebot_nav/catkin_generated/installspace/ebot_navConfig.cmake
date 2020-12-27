@@ -68,13 +68,13 @@ set(ebot_nav_CONFIG_INCLUDED TRUE)
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
   set(ebot_nav_SOURCE_PREFIX /home/chandan/catkin_ws/src/sahayak_bot/ebot_nav)
-  set(ebot_nav_DEVEL_PREFIX /home/chandan/catkin_ws/build/devel)
+  set(ebot_nav_DEVEL_PREFIX /home/chandan/catkin_ws/devel)
   set(ebot_nav_INSTALL_PREFIX "")
   set(ebot_nav_PREFIX ${ebot_nav_DEVEL_PREFIX})
 else()
   set(ebot_nav_SOURCE_PREFIX "")
   set(ebot_nav_DEVEL_PREFIX "")
-  set(ebot_nav_INSTALL_PREFIX /usr/local)
+  set(ebot_nav_INSTALL_PREFIX /home/chandan/catkin_ws/install)
   set(ebot_nav_PREFIX ${ebot_nav_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /usr/local/lib;/home/chandan/catkin_ws/devel/lib;/opt/ros/melodic/lib)
+    foreach(path /home/chandan/catkin_ws/install/lib;/home/chandan/catkin_ws/devel/lib;/opt/ros/melodic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

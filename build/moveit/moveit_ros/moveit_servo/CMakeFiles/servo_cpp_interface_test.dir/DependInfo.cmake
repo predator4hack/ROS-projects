@@ -18,7 +18,7 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/home/chandan/catkin_ws/src/moveit/moveit_ros/moveit_servo/include"
-  "devel/include"
+  "/home/chandan/catkin_ws/devel/include"
   "/home/chandan/catkin_ws/src/moveit/moveit_ros/planning_interface/py_bindings_tools/include"
   "/home/chandan/catkin_ws/src/moveit/moveit_ros/planning_interface/common_planning_interface_objects/include"
   "/home/chandan/catkin_ws/src/moveit/moveit_ros/planning_interface/planning_scene_interface/include"

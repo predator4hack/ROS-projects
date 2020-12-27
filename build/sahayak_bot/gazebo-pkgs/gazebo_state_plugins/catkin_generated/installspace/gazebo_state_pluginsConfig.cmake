@@ -68,13 +68,13 @@ set(gazebo_state_plugins_CONFIG_INCLUDED TRUE)
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
   set(gazebo_state_plugins_SOURCE_PREFIX /home/chandan/catkin_ws/src/sahayak_bot/gazebo-pkgs/gazebo_state_plugins)
-  set(gazebo_state_plugins_DEVEL_PREFIX /home/chandan/catkin_ws/build/devel)
+  set(gazebo_state_plugins_DEVEL_PREFIX /home/chandan/catkin_ws/devel)
   set(gazebo_state_plugins_INSTALL_PREFIX "")
   set(gazebo_state_plugins_PREFIX ${gazebo_state_plugins_DEVEL_PREFIX})
 else()
   set(gazebo_state_plugins_SOURCE_PREFIX "")
   set(gazebo_state_plugins_DEVEL_PREFIX "")
-  set(gazebo_state_plugins_INSTALL_PREFIX /usr/local)
+  set(gazebo_state_plugins_INSTALL_PREFIX /home/chandan/catkin_ws/install)
   set(gazebo_state_plugins_PREFIX ${gazebo_state_plugins_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /usr/local/lib;/home/chandan/catkin_ws/devel/lib;/opt/ros/melodic/lib)
+    foreach(path /home/chandan/catkin_ws/install/lib;/home/chandan/catkin_ws/devel/lib;/opt/ros/melodic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

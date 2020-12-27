@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/chandan/catkin_ws/build
 include moveit/moveit_core/collision_distance_field/CMakeFiles/_run_tests_moveit_core_gtest_test_collision_distance_field.dir/progress.make
 
 moveit/moveit_core/collision_distance_field/CMakeFiles/_run_tests_moveit_core_gtest_test_collision_distance_field:
-	cd /home/chandan/catkin_ws/build/moveit/moveit_core/collision_distance_field && ../../../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/catkin/cmake/test/run_tests.py /home/chandan/catkin_ws/build/test_results/moveit_core/gtest-test_collision_distance_field.xml "/home/chandan/catkin_ws/build/devel/lib/moveit_core/test_collision_distance_field --gtest_output=xml:/home/chandan/catkin_ws/build/test_results/moveit_core/gtest-test_collision_distance_field.xml"
+	cd /home/chandan/catkin_ws/build/moveit/moveit_core/collision_distance_field && ../../../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/catkin/cmake/test/run_tests.py /home/chandan/catkin_ws/build/test_results/moveit_core/gtest-test_collision_distance_field.xml "/home/chandan/catkin_ws/devel/lib/moveit_core/test_collision_distance_field --gtest_output=xml:/home/chandan/catkin_ws/build/test_results/moveit_core/gtest-test_collision_distance_field.xml"
 
 _run_tests_moveit_core_gtest_test_collision_distance_field: moveit/moveit_core/collision_distance_field/CMakeFiles/_run_tests_moveit_core_gtest_test_collision_distance_field
 _run_tests_moveit_core_gtest_test_collision_distance_field: moveit/moveit_core/collision_distance_field/CMakeFiles/_run_tests_moveit_core_gtest_test_collision_distance_field.dir/build.make

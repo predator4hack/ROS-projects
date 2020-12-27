@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/cpp_interface_example.dir/src/cpp_interface_example/cpp_interface_example.cpp.o"
-  "../../../devel/lib/moveit_servo/cpp_interface_example.pdb"
-  "../../../devel/lib/moveit_servo/cpp_interface_example"
+  "/home/chandan/catkin_ws/devel/lib/moveit_servo/cpp_interface_example.pdb"
+  "/home/chandan/catkin_ws/devel/lib/moveit_servo/cpp_interface_example"
 )
 
 # Per-language clean rules from dependency scanning.

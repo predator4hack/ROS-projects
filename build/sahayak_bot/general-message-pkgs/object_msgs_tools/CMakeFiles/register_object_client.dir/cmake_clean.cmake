@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/register_object_client.dir/src/register_object_client.cpp.o"
-  "../../../devel/lib/object_msgs_tools/register_object_client.pdb"
-  "../../../devel/lib/object_msgs_tools/register_object_client"
+  "/home/chandan/catkin_ws/devel/lib/object_msgs_tools/register_object_client.pdb"
+  "/home/chandan/catkin_ws/devel/lib/object_msgs_tools/register_object_client"
 )
 
 # Per-language clean rules from dependency scanning.

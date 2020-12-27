@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/chandan/catkin_ws/build
 include moveit/moveit_core/robot_model/CMakeFiles/_run_tests_moveit_core_gtest_test_robot_model.dir/progress.make
 
 moveit/moveit_core/robot_model/CMakeFiles/_run_tests_moveit_core_gtest_test_robot_model:
-	cd /home/chandan/catkin_ws/build/moveit/moveit_core/robot_model && ../../../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/catkin/cmake/test/run_tests.py /home/chandan/catkin_ws/build/test_results/moveit_core/gtest-test_robot_model.xml "/home/chandan/catkin_ws/build/devel/lib/moveit_core/test_robot_model --gtest_output=xml:/home/chandan/catkin_ws/build/test_results/moveit_core/gtest-test_robot_model.xml"
+	cd /home/chandan/catkin_ws/build/moveit/moveit_core/robot_model && ../../../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/catkin/cmake/test/run_tests.py /home/chandan/catkin_ws/build/test_results/moveit_core/gtest-test_robot_model.xml "/home/chandan/catkin_ws/devel/lib/moveit_core/test_robot_model --gtest_output=xml:/home/chandan/catkin_ws/build/test_results/moveit_core/gtest-test_robot_model.xml"
 
 _run_tests_moveit_core_gtest_test_robot_model: moveit/moveit_core/robot_model/CMakeFiles/_run_tests_moveit_core_gtest_test_robot_model
 _run_tests_moveit_core_gtest_test_robot_model: moveit/moveit_core/robot_model/CMakeFiles/_run_tests_moveit_core_gtest_test_robot_model.dir/build.make

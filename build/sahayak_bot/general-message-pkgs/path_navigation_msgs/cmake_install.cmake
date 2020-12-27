@@ -2,7 +2,7 @@
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/usr/local")
+  set(CMAKE_INSTALL_PREFIX "/home/chandan/catkin_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -46,25 +46,25 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/path_navigation_msgs/msg" TYPE FILE FILES
-    "/home/chandan/catkin_ws/build/devel/share/path_navigation_msgs/msg/PathExecutionAction.msg"
-    "/home/chandan/catkin_ws/build/devel/share/path_navigation_msgs/msg/PathExecutionActionGoal.msg"
-    "/home/chandan/catkin_ws/build/devel/share/path_navigation_msgs/msg/PathExecutionActionResult.msg"
-    "/home/chandan/catkin_ws/build/devel/share/path_navigation_msgs/msg/PathExecutionActionFeedback.msg"
-    "/home/chandan/catkin_ws/build/devel/share/path_navigation_msgs/msg/PathExecutionGoal.msg"
-    "/home/chandan/catkin_ws/build/devel/share/path_navigation_msgs/msg/PathExecutionResult.msg"
-    "/home/chandan/catkin_ws/build/devel/share/path_navigation_msgs/msg/PathExecutionFeedback.msg"
+    "/home/chandan/catkin_ws/devel/share/path_navigation_msgs/msg/PathExecutionAction.msg"
+    "/home/chandan/catkin_ws/devel/share/path_navigation_msgs/msg/PathExecutionActionGoal.msg"
+    "/home/chandan/catkin_ws/devel/share/path_navigation_msgs/msg/PathExecutionActionResult.msg"
+    "/home/chandan/catkin_ws/devel/share/path_navigation_msgs/msg/PathExecutionActionFeedback.msg"
+    "/home/chandan/catkin_ws/devel/share/path_navigation_msgs/msg/PathExecutionGoal.msg"
+    "/home/chandan/catkin_ws/devel/share/path_navigation_msgs/msg/PathExecutionResult.msg"
+    "/home/chandan/catkin_ws/devel/share/path_navigation_msgs/msg/PathExecutionFeedback.msg"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/path_navigation_msgs/msg" TYPE FILE FILES
-    "/home/chandan/catkin_ws/build/devel/share/path_navigation_msgs/msg/TransformPathExecutionAction.msg"
-    "/home/chandan/catkin_ws/build/devel/share/path_navigation_msgs/msg/TransformPathExecutionActionGoal.msg"
-    "/home/chandan/catkin_ws/build/devel/share/path_navigation_msgs/msg/TransformPathExecutionActionResult.msg"
-    "/home/chandan/catkin_ws/build/devel/share/path_navigation_msgs/msg/TransformPathExecutionActionFeedback.msg"
-    "/home/chandan/catkin_ws/build/devel/share/path_navigation_msgs/msg/TransformPathExecutionGoal.msg"
-    "/home/chandan/catkin_ws/build/devel/share/path_navigation_msgs/msg/TransformPathExecutionResult.msg"
-    "/home/chandan/catkin_ws/build/devel/share/path_navigation_msgs/msg/TransformPathExecutionFeedback.msg"
+    "/home/chandan/catkin_ws/devel/share/path_navigation_msgs/msg/TransformPathExecutionAction.msg"
+    "/home/chandan/catkin_ws/devel/share/path_navigation_msgs/msg/TransformPathExecutionActionGoal.msg"
+    "/home/chandan/catkin_ws/devel/share/path_navigation_msgs/msg/TransformPathExecutionActionResult.msg"
+    "/home/chandan/catkin_ws/devel/share/path_navigation_msgs/msg/TransformPathExecutionActionFeedback.msg"
+    "/home/chandan/catkin_ws/devel/share/path_navigation_msgs/msg/TransformPathExecutionGoal.msg"
+    "/home/chandan/catkin_ws/devel/share/path_navigation_msgs/msg/TransformPathExecutionResult.msg"
+    "/home/chandan/catkin_ws/devel/share/path_navigation_msgs/msg/TransformPathExecutionFeedback.msg"
     )
 endif()
 
@@ -73,27 +73,27 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/chandan/catkin_ws/build/devel/include/path_navigation_msgs")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/chandan/catkin_ws/devel/include/path_navigation_msgs")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/chandan/catkin_ws/build/devel/share/roseus/ros/path_navigation_msgs")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/chandan/catkin_ws/devel/share/roseus/ros/path_navigation_msgs")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/chandan/catkin_ws/build/devel/share/common-lisp/ros/path_navigation_msgs")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/chandan/catkin_ws/devel/share/common-lisp/ros/path_navigation_msgs")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gennodejs/ros" TYPE DIRECTORY FILES "/home/chandan/catkin_ws/build/devel/share/gennodejs/ros/path_navigation_msgs")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gennodejs/ros" TYPE DIRECTORY FILES "/home/chandan/catkin_ws/devel/share/gennodejs/ros/path_navigation_msgs")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  execute_process(COMMAND "/usr/bin/python2" -m compileall "/home/chandan/catkin_ws/build/devel/lib/python2.7/dist-packages/path_navigation_msgs")
+  execute_process(COMMAND "/usr/bin/python2" -m compileall "/home/chandan/catkin_ws/devel/lib/python2.7/dist-packages/path_navigation_msgs")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages" TYPE DIRECTORY FILES "/home/chandan/catkin_ws/build/devel/lib/python2.7/dist-packages/path_navigation_msgs")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages" TYPE DIRECTORY FILES "/home/chandan/catkin_ws/devel/lib/python2.7/dist-packages/path_navigation_msgs")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)

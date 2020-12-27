@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/gazebo_object_info.dir/src/GazeboObjectInfo.cpp.o"
-  "../../../devel/lib/libgazebo_object_info.pdb"
-  "../../../devel/lib/libgazebo_object_info.so"
+  "/home/chandan/catkin_ws/devel/lib/libgazebo_object_info.pdb"
+  "/home/chandan/catkin_ws/devel/lib/libgazebo_object_info.so"
 )
 
 # Per-language clean rules from dependency scanning.

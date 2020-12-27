@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/spacenav_to_twist.dir/src/teleop_examples/spacenav_to_twist.cpp.o"
-  "../../../devel/lib/moveit_servo/spacenav_to_twist.pdb"
-  "../../../devel/lib/moveit_servo/spacenav_to_twist"
+  "/home/chandan/catkin_ws/devel/lib/moveit_servo/spacenav_to_twist.pdb"
+  "/home/chandan/catkin_ws/devel/lib/moveit_servo/spacenav_to_twist"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/gazebo_ros_link_attacher.dir/src/gazebo_ros_link_attacher.cpp.o"
-  "../../devel/lib/libgazebo_ros_link_attacher.pdb"
-  "../../devel/lib/libgazebo_ros_link_attacher.so"
+  "/home/chandan/catkin_ws/devel/lib/libgazebo_ros_link_attacher.pdb"
+  "/home/chandan/catkin_ws/devel/lib/libgazebo_ros_link_attacher.so"
 )
 
 # Per-language clean rules from dependency scanning.

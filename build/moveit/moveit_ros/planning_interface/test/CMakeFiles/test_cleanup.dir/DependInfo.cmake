@@ -22,7 +22,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/home/chandan/catkin_ws/src/moveit/moveit_ros/planning_interface/planning_scene_interface/include"
   "/home/chandan/catkin_ws/src/moveit/moveit_ros/planning_interface/move_group_interface/include"
   "/home/chandan/catkin_ws/src/moveit/moveit_ros/planning_interface/moveit_cpp/include"
-  "devel/include"
+  "/home/chandan/catkin_ws/devel/include"
   "/home/chandan/catkin_ws/src/moveit/moveit_ros/planning/rdf_loader/include"
   "/home/chandan/catkin_ws/src/moveit/moveit_ros/planning/kinematics_plugin_loader/include"
   "/home/chandan/catkin_ws/src/moveit/moveit_ros/planning/robot_model_loader/include"

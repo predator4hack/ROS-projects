@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/robotiq_85_msgs_generate_messages_lisp"
-  "../../../devel/share/common-lisp/ros/robotiq_85_msgs/msg/GripperStat.lisp"
-  "../../../devel/share/common-lisp/ros/robotiq_85_msgs/msg/GripperCmd.lisp"
+  "/home/chandan/catkin_ws/devel/share/common-lisp/ros/robotiq_85_msgs/msg/GripperStat.lisp"
+  "/home/chandan/catkin_ws/devel/share/common-lisp/ros/robotiq_85_msgs/msg/GripperCmd.lisp"
 )
 
 # Per-language clean rules from dependency scanning.

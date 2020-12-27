@@ -20,7 +20,7 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/home/chandan/catkin_ws/src/sahayak_bot/gazebo-pkgs/gazebo_state_plugins/include"
-  "devel/include"
+  "/home/chandan/catkin_ws/devel/include"
   "/home/chandan/catkin_ws/src/sahayak_bot/gazebo-pkgs/gazebo_world_plugin_loader/include"
   "/home/chandan/catkin_ws/src/sahayak_bot/gazebo-pkgs/gazebo_version_helpers/include"
   "/home/chandan/catkin_ws/src/sahayak_bot/general-message-pkgs/object_msgs_tools/include"

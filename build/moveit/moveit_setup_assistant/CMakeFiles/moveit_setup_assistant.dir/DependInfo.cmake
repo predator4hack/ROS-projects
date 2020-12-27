@@ -25,7 +25,7 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "moveit/moveit_setup_assistant/moveit_setup_assistant_autogen/include"
   "/home/chandan/catkin_ws/src/moveit/moveit_setup_assistant/include"
-  "devel/include"
+  "/home/chandan/catkin_ws/devel/include"
   "/home/chandan/catkin_ws/src/moveit/moveit_core/background_processing/include"
   "/home/chandan/catkin_ws/src/moveit/moveit_core/exceptions/include"
   "/home/chandan/catkin_ws/src/moveit/moveit_core/backtrace/include"

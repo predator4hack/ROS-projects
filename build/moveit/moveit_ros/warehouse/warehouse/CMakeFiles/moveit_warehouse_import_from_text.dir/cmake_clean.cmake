@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/moveit_warehouse_import_from_text.dir/src/import_from_text.cpp.o"
-  "../../../../devel/lib/moveit_ros_warehouse/moveit_warehouse_import_from_text.pdb"
-  "../../../../devel/lib/moveit_ros_warehouse/moveit_warehouse_import_from_text"
+  "/home/chandan/catkin_ws/devel/lib/moveit_ros_warehouse/moveit_warehouse_import_from_text.pdb"
+  "/home/chandan/catkin_ws/devel/lib/moveit_ros_warehouse/moveit_warehouse_import_from_text"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -5,9 +5,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/moveit_robot_state_rviz_plugin_core_autogen.dir/AutogenOldSettings.cmake"
   "CMakeFiles/moveit_robot_state_rviz_plugin_core.dir/src/robot_state_display.cpp.o"
   "CMakeFiles/moveit_robot_state_rviz_plugin_core.dir/moveit_robot_state_rviz_plugin_core_autogen/mocs_compilation.cpp.o"
-  "../../../../devel/lib/libmoveit_robot_state_rviz_plugin_core.pdb"
-  "../../../../devel/lib/libmoveit_robot_state_rviz_plugin_core.so.1.0.7"
-  "../../../../devel/lib/libmoveit_robot_state_rviz_plugin_core.so"
+  "/home/chandan/catkin_ws/devel/lib/libmoveit_robot_state_rviz_plugin_core.pdb"
+  "/home/chandan/catkin_ws/devel/lib/libmoveit_robot_state_rviz_plugin_core.so.1.0.7"
+  "/home/chandan/catkin_ws/devel/lib/libmoveit_robot_state_rviz_plugin_core.so"
 )
 
 # Per-language clean rules from dependency scanning.

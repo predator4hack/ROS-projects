@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/moveit_planning_scene_interface_python.dir/src/wrap_python_planning_scene_interface.cpp.o"
-  "../../../../devel/lib/python2.7/dist-packages/moveit_ros_planning_interface/_moveit_planning_scene_interface.pdb"
-  "../../../../devel/lib/python2.7/dist-packages/moveit_ros_planning_interface/_moveit_planning_scene_interface.so.1.0.7"
-  "../../../../devel/lib/python2.7/dist-packages/moveit_ros_planning_interface/_moveit_planning_scene_interface.so"
+  "/home/chandan/catkin_ws/devel/lib/python2.7/dist-packages/moveit_ros_planning_interface/_moveit_planning_scene_interface.pdb"
+  "/home/chandan/catkin_ws/devel/lib/python2.7/dist-packages/moveit_ros_planning_interface/_moveit_planning_scene_interface.so.1.0.7"
+  "/home/chandan/catkin_ws/devel/lib/python2.7/dist-packages/moveit_ros_planning_interface/_moveit_planning_scene_interface.so"
 )
 
 # Per-language clean rules from dependency scanning.

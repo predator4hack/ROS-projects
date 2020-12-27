@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/move_group.dir/src/move_group.cpp.o"
-  "../../../devel/lib/moveit_ros_move_group/move_group.pdb"
-  "../../../devel/lib/moveit_ros_move_group/move_group"
+  "/home/chandan/catkin_ws/devel/lib/moveit_ros_move_group/move_group.pdb"
+  "/home/chandan/catkin_ws/devel/lib/moveit_ros_move_group/move_group"
 )
 
 # Per-language clean rules from dependency scanning.

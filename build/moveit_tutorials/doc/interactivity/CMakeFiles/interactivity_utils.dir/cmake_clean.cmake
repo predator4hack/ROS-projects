@@ -2,8 +2,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/interactivity_utils.dir/src/interactive_robot.cpp.o"
   "CMakeFiles/interactivity_utils.dir/src/imarker.cpp.o"
   "CMakeFiles/interactivity_utils.dir/src/pose_string.cpp.o"
-  "../../../devel/lib/libinteractivity_utils.pdb"
-  "../../../devel/lib/libinteractivity_utils.so"
+  "/home/chandan/catkin_ws/devel/lib/libinteractivity_utils.pdb"
+  "/home/chandan/catkin_ws/devel/lib/libinteractivity_utils.so"
 )
 
 # Per-language clean rules from dependency scanning.

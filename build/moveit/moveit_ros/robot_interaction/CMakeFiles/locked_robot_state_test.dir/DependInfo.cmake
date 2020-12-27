@@ -18,7 +18,7 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/home/chandan/catkin_ws/src/moveit/moveit_ros/robot_interaction/include"
-  "devel/include"
+  "/home/chandan/catkin_ws/devel/include"
   "/home/chandan/catkin_ws/src/moveit/moveit_ros/planning/rdf_loader/include"
   "/home/chandan/catkin_ws/src/moveit/moveit_ros/planning/kinematics_plugin_loader/include"
   "/home/chandan/catkin_ws/src/moveit/moveit_ros/planning/robot_model_loader/include"

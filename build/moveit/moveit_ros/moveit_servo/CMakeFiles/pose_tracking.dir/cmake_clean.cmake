@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/pose_tracking.dir/src/pose_tracking.cpp.o"
-  "../../../devel/lib/libpose_tracking.pdb"
-  "../../../devel/lib/libpose_tracking.so"
+  "/home/chandan/catkin_ws/devel/lib/libpose_tracking.pdb"
+  "/home/chandan/catkin_ws/devel/lib/libpose_tracking.so"
 )
 
 # Per-language clean rules from dependency scanning.

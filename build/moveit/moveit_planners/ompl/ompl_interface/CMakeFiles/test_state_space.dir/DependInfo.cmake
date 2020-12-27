@@ -17,7 +17,7 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "devel/include"
+  "/home/chandan/catkin_ws/devel/include"
   "/home/chandan/catkin_ws/src/moveit/moveit_planners/ompl/ompl_interface/include"
   "/home/chandan/catkin_ws/src/moveit/moveit_core/background_processing/include"
   "/home/chandan/catkin_ws/src/moveit/moveit_core/exceptions/include"

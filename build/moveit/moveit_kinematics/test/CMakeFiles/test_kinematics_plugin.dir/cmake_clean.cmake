@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/test_kinematics_plugin.dir/test_kinematics_plugin.cpp.o"
-  "../../../devel/lib/moveit_kinematics/test_kinematics_plugin.pdb"
-  "../../../devel/lib/moveit_kinematics/test_kinematics_plugin"
+  "/home/chandan/catkin_ws/devel/lib/moveit_kinematics/test_kinematics_plugin.pdb"
+  "/home/chandan/catkin_ws/devel/lib/moveit_kinematics/test_kinematics_plugin"
 )
 
 # Per-language clean rules from dependency scanning.

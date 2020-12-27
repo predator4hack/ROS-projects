@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/test_cleanup.dir/test_cleanup.cpp.o"
-  "../../../../devel/lib/moveit_ros_planning_interface/test_cleanup.pdb"
-  "../../../../devel/lib/moveit_ros_planning_interface/test_cleanup"
+  "/home/chandan/catkin_ws/devel/lib/moveit_ros_planning_interface/test_cleanup.pdb"
+  "/home/chandan/catkin_ws/devel/lib/moveit_ros_planning_interface/test_cleanup"
 )
 
 # Per-language clean rules from dependency scanning.

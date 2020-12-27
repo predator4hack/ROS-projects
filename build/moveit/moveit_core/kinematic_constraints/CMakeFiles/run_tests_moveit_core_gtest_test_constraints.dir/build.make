@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/chandan/catkin_ws/build
 include moveit/moveit_core/kinematic_constraints/CMakeFiles/run_tests_moveit_core_gtest_test_constraints.dir/progress.make
 
 moveit/moveit_core/kinematic_constraints/CMakeFiles/run_tests_moveit_core_gtest_test_constraints:
-	cd /home/chandan/catkin_ws/build/moveit/moveit_core/kinematic_constraints && ../../../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/catkin/cmake/test/run_tests.py /home/chandan/catkin_ws/build/test_results/moveit_core/gtest-test_constraints.xml "/home/chandan/catkin_ws/build/devel/lib/moveit_core/test_constraints --gtest_output=xml:/home/chandan/catkin_ws/build/test_results/moveit_core/gtest-test_constraints.xml"
+	cd /home/chandan/catkin_ws/build/moveit/moveit_core/kinematic_constraints && ../../../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/catkin/cmake/test/run_tests.py /home/chandan/catkin_ws/build/test_results/moveit_core/gtest-test_constraints.xml "/home/chandan/catkin_ws/devel/lib/moveit_core/test_constraints --gtest_output=xml:/home/chandan/catkin_ws/build/test_results/moveit_core/gtest-test_constraints.xml"
 
 run_tests_moveit_core_gtest_test_constraints: moveit/moveit_core/kinematic_constraints/CMakeFiles/run_tests_moveit_core_gtest_test_constraints
 run_tests_moveit_core_gtest_test_constraints: moveit/moveit_core/kinematic_constraints/CMakeFiles/run_tests_moveit_core_gtest_test_constraints.dir/build.make
