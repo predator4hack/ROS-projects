@@ -48,6 +48,8 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 set(CMAKE_TARGET_LINKED_INFO_FILES
   "/home/chandan/catkin_ws/build/sahayak_bot/gazebo-pkgs/gazebo_world_plugin_loader/CMakeFiles/gazebo_world_plugin_loader.dir/DependInfo.cmake"
   "/home/chandan/catkin_ws/build/sahayak_bot/gazebo-pkgs/gazebo_version_helpers/CMakeFiles/gazebo_version_helpers.dir/DependInfo.cmake"
+  "/home/chandan/catkin_ws/build/gazebo_ros_pkgs/gazebo_ros/CMakeFiles/gazebo_ros_api_plugin.dir/DependInfo.cmake"
+  "/home/chandan/catkin_ws/build/gazebo_ros_pkgs/gazebo_ros/CMakeFiles/gazebo_ros_paths_plugin.dir/DependInfo.cmake"
   "/home/chandan/catkin_ws/build/sahayak_bot/general-message-pkgs/object_msgs_tools/CMakeFiles/object_msgs_tools.dir/DependInfo.cmake"
   )
 

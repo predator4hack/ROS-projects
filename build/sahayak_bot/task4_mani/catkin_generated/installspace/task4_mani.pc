@@ -1,0 +1,8 @@
+prefix=/home/chandan/catkin_ws/install
+
+Name: task4_mani
+Description: Description of task4_mani
+Version: 0.3.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
