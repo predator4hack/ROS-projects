@@ -1,2 +1,4 @@
 #ignore bag files
 *.bag
+*.stl
+*.dae
